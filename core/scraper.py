@@ -667,36 +667,73 @@ class VisaScraper:
             log.warning(f"Could not read security question fields: {e}")
             return []
 
-    async def _wait_for_auth_redirect(self, timeout=90) -> bool:
+    async def _wait_for_auth_redirect(self, timeout=150) -> bool:
         start = asyncio.get_event_loop().time()
         while (asyncio.get_event_loop().time() - start) < timeout:
             self._check_abort()
+
+            try:
+                body_peek = (await self._page.inner_text("body")).lower()
+            except Exception:
+                body_peek = ""
+
+            if any(s in body_peek for s in ["verify you are human",
+                    "just a moment", "performing security verification",
+                    "checking your browser"]):
+                log.info("Cloudflare appeared after security — handling it")
+                await self._handle_cloudflare(timeout=60)
+                continue
+
+            if any(s in body_peek for s in ["waiting room", "you are now in line",
+                    "thank you for your patience", "you are being redirected",
+                    "do not close your browser"]):
+                log.info("Waiting room appeared after security — handling it")
+                await self._handle_waiting_room(timeout=300)
+                continue
+
             url = (self._page.url or "").lower()
+
+            # STRONG positive signals — logged-in proof
             if await self._visible_any([
                 "a[href*='logout']",
+                "a[href*='LogOff']",
                 "a[href*='signout']",
+                "#atlas-sidebar",
+                "#reschedule_appointment",
+                "#continue_application",
+                "#manage_appointments",
+                "#schedule_appointment",
                 ".dashboard",
                 "#dashboard",
             ], timeout=700):
                 log.info("Login successful after security questions")
                 return True
-            if "usvisascheduling.com" in url and "b2clogin.com" not in url:
+
+            # Logged-in homepage text
+            if any(t in body_peek for t in [
+                "manage appointments", "reschedule appointment",
+                "continue application", "log off", "logoff", "sign out",
+            ]):
+                log.info("Login successful — portal content detected")
+                return True
+
+            # Back on the portal (and not on the B2C login domain)
+            if "usvisascheduling.com" in url and "b2clogin.com" not in url \
+                    and "atlasauth" not in url:
                 log.info("Returned to US Visa Scheduling portal")
                 return True
-            try:
-                body = (await self._page.inner_text("body")).lower()
-                if any(text in body for text in [
-                    "incorrect",
-                    "invalid answer",
-                    "try again",
-                    "the information you entered",
-                ]):
-                    log.error("Security answer rejected by portal")
-                    await self.screenshot("security_answer_rejected")
-                    return False
-            except Exception:
-                pass
+
+            # Real rejection — wrong answer
+            if any(text in body_peek for text in [
+                "incorrect", "invalid answer", "try again",
+                "the information you entered",
+            ]):
+                log.error("Security answer rejected by portal")
+                await self.screenshot("security_answer_rejected")
+                return False
+
             await asyncio.sleep(1)
+
         log.warning("Timed out waiting for portal redirect after security submit")
         await self.screenshot("auth_redirect_timeout")
         return False
@@ -1184,23 +1221,90 @@ class VisaScraper:
         except Exception:
             pass
 
-        try:
-            current_val = await self._page.evaluate(
-                "() => document.querySelector('#post_select').value"
-            )
-            if current_val == DHAKA_POST_VALUE:
-                log.info("DHAKA already selected")
-            else:
+        # Make sure the dropdown AND the DHAKA option are actually loaded first.
+        # On session-reuse the page can render #post_select before its options
+        # finish loading, so selecting too early silently fails.
+        dhaka_ready = False
+        for _ in range(20):
+            self._check_abort()
+            try:
+                has_dhaka = await self._page.evaluate(
+                    f"""() => {{
+                        const sel = document.querySelector('#post_select');
+                        if (!sel) return false;
+                        return !!sel.querySelector('option[value="{DHAKA_POST_VALUE}"]');
+                    }}"""
+                )
+                if has_dhaka:
+                    dhaka_ready = True
+                    break
+            except Exception:
+                pass
+            # A late Cloudflare / waiting room can also block the options
+            try:
+                body_peek = (await self._page.inner_text("body")).lower()
+                if any(s in body_peek for s in ["verify you are human",
+                        "just a moment", "performing security verification"]):
+                    await self._handle_cloudflare(timeout=60)
+                if any(s in body_peek for s in ["waiting room", "you are now in line"]):
+                    await self._handle_waiting_room(timeout=300)
+            except Exception:
+                pass
+            await asyncio.sleep(1)
+
+        if not dhaka_ready:
+            log.error("DHAKA option never appeared in #post_select")
+            await self.screenshot("dhaka_option_missing")
+            return False
+
+        # Now select DHAKA (retry a few times — the option can need a beat)
+        selected = False
+        for attempt in range(3):
+            self._check_abort()
+            try:
+                current_val = await self._page.evaluate(
+                    "() => document.querySelector('#post_select').value"
+                )
+                if current_val == DHAKA_POST_VALUE:
+                    log.info("DHAKA already selected")
+                    selected = True
+                    break
                 await self._page.select_option("#post_select", value=DHAKA_POST_VALUE)
-                log.info("✅ Selected DHAKA from dropdown")
-        except Exception as e:
-            log.error(f"Cannot select DHAKA: {e}")
+                await self._sleep(0.5, 1)
+                # Verify it actually took
+                new_val = await self._page.evaluate(
+                    "() => document.querySelector('#post_select').value"
+                )
+                if new_val == DHAKA_POST_VALUE:
+                    log.info("✅ Selected DHAKA from dropdown")
+                    selected = True
+                    break
+                log.info(f"DHAKA select didn't stick (attempt {attempt+1}) — retrying")
+            except Exception as e:
+                log.warning(f"DHAKA select attempt {attempt+1} failed: {e}")
+                await self._sleep(1, 1.5)
+
+        if not selected:
+            log.error("Cannot select DHAKA after retries")
+            await self.screenshot("dhaka_select_failed")
             return False
 
         log.info("Waiting for calendar to load...")
         for i in range(30):
             self._check_abort()
             await asyncio.sleep(1)
+
+            # If a Cloudflare/redirect kicked us off the schedule page, recover
+            try:
+                if not await self._page.is_visible("#post_select", timeout=500):
+                    body_peek = (await self._page.inner_text("body")).lower()
+                    if any(s in body_peek for s in ["verify you are human",
+                            "just a moment", "performing security verification"]):
+                        log.info("Cloudflare appeared while loading calendar — handling")
+                        await self._handle_cloudflare(timeout=60)
+            except Exception:
+                pass
+
             try:
                 has_calendar = await self._page.is_visible(
                     ".ui-datepicker-calendar", timeout=1000

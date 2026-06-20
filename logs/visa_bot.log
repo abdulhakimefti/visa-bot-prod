@@ -47734,3 +47734,258 @@ Call log:
 2026-06-16 12:21:56,789 [INFO] visa_bot: Browser stopped
 2026-06-16 12:21:58,734 [INFO] visa_bot: ✅ Telegram message sent
 2026-06-16 12:21:58,736 [INFO] visa_bot: Done.
+2026-06-20 12:37:52,243 [INFO] visa_bot: =======================================================
+2026-06-20 12:37:52,258 [INFO] visa_bot:    VISA APPOINTMENT BOT — Starting
+2026-06-20 12:37:52,260 [INFO] visa_bot: =======================================================
+2026-06-20 12:37:52,292 [INFO] visa_bot: Database ready ✓
+2026-06-20 12:37:55,573 [INFO] visa_bot: Telegram bot started ✓
+2026-06-20 12:37:55,574 [INFO] visa_bot: Testing Telegram connection...
+2026-06-20 12:37:55,575 [INFO] visa_bot: Testing Telegram connection...
+2026-06-20 12:37:56,505 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:37:56,507 [INFO] visa_bot: ✅ Telegram connection test passed!
+2026-06-20 12:37:56,513 [INFO] visa_bot: Existing config found — resuming
+2026-06-20 12:37:57,400 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:37:57,435 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-13 → 2026-10-01
+2026-06-20 12:37:57,436 [INFO] visa_bot: Bot running. Press Ctrl+C to stop.
+2026-06-20 12:37:57,441 [INFO] visa_bot: Agent paused — waiting for /resume
+2026-06-20 12:38:08,216 [INFO] visa_bot: 🗑️ Cleared 1 saved session(s)
+2026-06-20 12:38:10,451 [INFO] visa_bot: 🗑️ Cleared 0 saved session(s)
+2026-06-20 12:38:10,531 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-13 → 2026-10-01
+2026-06-20 12:38:11,435 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:38:11,437 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:38:17,481 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-13 → 2026-10-01
+2026-06-20 12:38:18,391 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:38:18,393 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:38:24,460 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-13 → 2026-10-01
+2026-06-20 12:38:25,463 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:38:25,466 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:38:31,512 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-13 → 2026-10-01
+2026-06-20 12:38:32,359 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:38:32,361 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:38:38,401 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-13 → 2026-10-01
+2026-06-20 12:38:39,380 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:38:39,382 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:38:45,446 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-13 → 2026-10-01
+2026-06-20 12:38:46,270 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:38:46,278 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:38:52,293 [INFO] visa_bot: Agent paused — waiting for /resume
+2026-06-20 12:39:22,312 [INFO] visa_bot: Agent paused — waiting for /resume
+2026-06-20 12:39:47,942 [INFO] visa_bot: Account #24 saved: ahnafrafid10
+2026-06-20 12:39:48,412 [INFO] visa_bot: 🗑️ Cleared 0 saved session(s)
+2026-06-20 12:39:48,485 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-20 → 2026-07-31
+2026-06-20 12:39:48,491 [INFO] visa_bot: ━━━ Scan #1 | 1 account(s) | 12:39:48 ━━━
+2026-06-20 12:39:49,527 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:39:49,529 [INFO] visa_bot: Scanning for ahnafrafid10 (1/1)
+2026-06-20 12:40:07,025 [INFO] visa_bot: Browser started
+2026-06-20 12:40:07,026 [INFO] visa_bot: Logging in as: ahnafrafid10
+2026-06-20 12:40:08,180 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:40:10,533 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:40:10,534 [INFO] visa_bot: Waiting for login page... 2s elapsed
+2026-06-20 12:40:13,626 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-20 12:40:13,627 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-20 12:40:13,696 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-20 12:40:15,471 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-20 12:40:16,494 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:40:20,555 [INFO] visa_bot: Retrying in 2s...
+2026-06-20 12:40:22,583 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-20 12:40:22,584 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-20 12:40:22,599 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-20 12:40:23,151 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-20 12:40:23,939 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:40:29,281 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-20 12:40:29,294 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:40:32,316 [INFO] visa_bot: Login form detected
+2026-06-20 12:40:33,242 [INFO] visa_bot: Username filled
+2026-06-20 12:40:33,661 [INFO] visa_bot: Password filled
+2026-06-20 12:40:34,149 [INFO] visa_bot: Login submitted
+2026-06-20 12:40:34,252 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:40:34,261 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:40:37,131 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-20 12:40:38,165 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-20 12:40:38,167 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-20 12:40:38,261 [INFO] visa_bot: Filled #kba1_response
+2026-06-20 12:40:38,263 [INFO] visa_bot: Security question: What high school did you attend? | matched keyword: school
+2026-06-20 12:40:38,315 [INFO] visa_bot: Filled #kba2_response
+2026-06-20 12:40:39,007 [INFO] visa_bot: Security questions submitted
+2026-06-20 12:40:48,603 [INFO] visa_bot: Login successful — portal content detected
+2026-06-20 12:40:49,868 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:40:50,686 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-20 12:40:50,929 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-20 12:40:50,942 [INFO] visa_bot: 💾 Session saved for ahnafrafid10
+2026-06-20 12:40:51,940 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:40:51,944 [INFO] visa_bot: Login OK for ahnafrafid10 — scanning slots...
+2026-06-20 12:40:51,946 [INFO] visa_bot: ==================================================
+2026-06-20 12:40:51,947 [INFO] visa_bot: Starting appointment scan on real portal...
+2026-06-20 12:40:53,153 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:40:54,076 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:40:54,079 [INFO] visa_bot: Navigating to homepage...
+2026-06-20 12:40:55,375 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:40:55,411 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:40:56,934 [INFO] visa_bot: Detecting schedule type...
+2026-06-20 12:40:58,273 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-20 12:40:59,082 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:40:59,120 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:40:59,130 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:41:01,632 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-20 12:41:02,743 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:03,420 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-20 12:41:03,421 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-20 12:41:04,445 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-20 12:41:04,445 [INFO] visa_bot: Filtering dates to range: 2026-06-20 → 2026-07-31
+2026-06-20 12:41:04,457 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-20 12:41:07,032 [INFO] visa_bot: Found 7 dates after scrolling 2 months!
+2026-06-20 12:41:07,144 [INFO] visa_bot: ⏭ Skipping 2026-09-09 — outside configured range
+2026-06-20 12:41:07,200 [INFO] visa_bot: ⏭ Skipping 2026-09-14 — outside configured range
+2026-06-20 12:41:07,255 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-20 12:41:07,313 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-20 12:41:07,371 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-20 12:41:07,428 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-20 12:41:07,483 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-20 12:41:07,484 [INFO] visa_bot: Total available dates: 0
+2026-06-20 12:41:07,485 [INFO] visa_bot: ❌ No available appointment dates found
+2026-06-20 12:41:07,487 [INFO] visa_bot: No slots found for ahnafrafid10
+2026-06-20 12:41:08,493 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:09,581 [INFO] visa_bot: Browser stopped
+2026-06-20 12:41:09,596 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:41:15,652 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-20 → 2026-07-31
+2026-06-20 12:41:15,657 [INFO] visa_bot: ━━━ Scan #2 | 1 account(s) | 12:41:15 ━━━
+2026-06-20 12:41:16,669 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:16,671 [INFO] visa_bot: Scanning for ahnafrafid10 (1/1)
+2026-06-20 12:41:18,511 [INFO] visa_bot: Browser started
+2026-06-20 12:41:18,512 [INFO] visa_bot: Logging in as: ahnafrafid10
+2026-06-20 12:41:18,610 [INFO] visa_bot: ♻️ Session loaded for ahnafrafid10
+2026-06-20 12:41:18,610 [INFO] visa_bot: Trying saved session — checking if still valid...
+2026-06-20 12:41:25,291 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:41:25,529 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:41:28,429 [INFO] visa_bot: ✅ Session still valid — login skipped!
+2026-06-20 12:41:29,358 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:29,360 [INFO] visa_bot: Login OK for ahnafrafid10 — scanning slots...
+2026-06-20 12:41:29,360 [INFO] visa_bot: ==================================================
+2026-06-20 12:41:29,361 [INFO] visa_bot: Starting appointment scan on real portal...
+2026-06-20 12:41:30,287 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:31,135 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:31,138 [INFO] visa_bot: Navigating to homepage...
+2026-06-20 12:41:32,592 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:41:32,622 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:41:33,887 [INFO] visa_bot: Detecting schedule type...
+2026-06-20 12:41:35,058 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-20 12:41:36,023 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:36,061 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:41:36,073 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:41:38,224 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-20 12:41:39,255 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:40,144 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-20 12:41:40,145 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-20 12:41:41,172 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-20 12:41:41,173 [INFO] visa_bot: Filtering dates to range: 2026-06-20 → 2026-07-31
+2026-06-20 12:41:41,184 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-20 12:41:43,826 [INFO] visa_bot: Found 7 dates after scrolling 2 months!
+2026-06-20 12:41:43,878 [INFO] visa_bot: ⏭ Skipping 2026-09-09 — outside configured range
+2026-06-20 12:41:43,928 [INFO] visa_bot: ⏭ Skipping 2026-09-14 — outside configured range
+2026-06-20 12:41:43,982 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-20 12:41:44,032 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-20 12:41:44,082 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-20 12:41:44,132 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-20 12:41:44,187 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-20 12:41:44,188 [INFO] visa_bot: Total available dates: 0
+2026-06-20 12:41:44,189 [INFO] visa_bot: ❌ No available appointment dates found
+2026-06-20 12:41:44,190 [INFO] visa_bot: No slots found for ahnafrafid10
+2026-06-20 12:41:45,176 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:45,753 [INFO] visa_bot: Browser stopped
+2026-06-20 12:41:45,767 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:41:51,819 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-20 → 2026-07-31
+2026-06-20 12:41:51,824 [INFO] visa_bot: ━━━ Scan #3 | 1 account(s) | 12:41:51 ━━━
+2026-06-20 12:41:52,919 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:41:52,920 [INFO] visa_bot: Scanning for ahnafrafid10 (1/1)
+2026-06-20 12:41:54,626 [INFO] visa_bot: Browser started
+2026-06-20 12:41:54,627 [INFO] visa_bot: Logging in as: ahnafrafid10
+2026-06-20 12:41:54,648 [INFO] visa_bot: ♻️ Session loaded for ahnafrafid10
+2026-06-20 12:41:54,649 [INFO] visa_bot: Trying saved session — checking if still valid...
+2026-06-20 12:42:00,816 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:42:01,011 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:42:03,816 [INFO] visa_bot: ✅ Session still valid — login skipped!
+2026-06-20 12:42:04,702 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:04,703 [INFO] visa_bot: Login OK for ahnafrafid10 — scanning slots...
+2026-06-20 12:42:04,704 [INFO] visa_bot: ==================================================
+2026-06-20 12:42:04,704 [INFO] visa_bot: Starting appointment scan on real portal...
+2026-06-20 12:42:05,507 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:06,328 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:06,331 [INFO] visa_bot: Navigating to homepage...
+2026-06-20 12:42:07,885 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:42:07,927 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:42:09,201 [INFO] visa_bot: Detecting schedule type...
+2026-06-20 12:42:10,384 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-20 12:42:11,351 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:11,386 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:42:11,396 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:42:13,436 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-20 12:42:14,451 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:15,096 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-20 12:42:15,097 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-20 12:42:16,121 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-20 12:42:16,122 [INFO] visa_bot: Filtering dates to range: 2026-06-20 → 2026-07-31
+2026-06-20 12:42:16,133 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-20 12:42:18,914 [INFO] visa_bot: Found 7 dates after scrolling 2 months!
+2026-06-20 12:42:18,965 [INFO] visa_bot: ⏭ Skipping 2026-09-09 — outside configured range
+2026-06-20 12:42:19,010 [INFO] visa_bot: ⏭ Skipping 2026-09-14 — outside configured range
+2026-06-20 12:42:19,054 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-20 12:42:19,090 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-20 12:42:19,125 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-20 12:42:19,172 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-20 12:42:19,208 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-20 12:42:19,209 [INFO] visa_bot: Total available dates: 0
+2026-06-20 12:42:19,210 [INFO] visa_bot: ❌ No available appointment dates found
+2026-06-20 12:42:19,210 [INFO] visa_bot: No slots found for ahnafrafid10
+2026-06-20 12:42:20,136 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:20,712 [INFO] visa_bot: Browser stopped
+2026-06-20 12:42:20,744 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:42:26,824 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-20 → 2026-07-31
+2026-06-20 12:42:26,833 [INFO] visa_bot: ━━━ Scan #4 | 1 account(s) | 12:42:26 ━━━
+2026-06-20 12:42:27,718 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:27,719 [INFO] visa_bot: Scanning for ahnafrafid10 (1/1)
+2026-06-20 12:42:29,611 [INFO] visa_bot: Browser started
+2026-06-20 12:42:29,613 [INFO] visa_bot: Logging in as: ahnafrafid10
+2026-06-20 12:42:29,639 [INFO] visa_bot: ♻️ Session loaded for ahnafrafid10
+2026-06-20 12:42:29,643 [INFO] visa_bot: Trying saved session — checking if still valid...
+2026-06-20 12:42:36,571 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:42:36,585 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:42:39,673 [INFO] visa_bot: ✅ Session still valid — login skipped!
+2026-06-20 12:42:40,585 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:40,587 [INFO] visa_bot: Login OK for ahnafrafid10 — scanning slots...
+2026-06-20 12:42:40,589 [INFO] visa_bot: ==================================================
+2026-06-20 12:42:40,590 [INFO] visa_bot: Starting appointment scan on real portal...
+2026-06-20 12:42:41,426 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:42,251 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:42,253 [INFO] visa_bot: Navigating to homepage...
+2026-06-20 12:42:43,672 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:42:43,704 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:42:45,046 [INFO] visa_bot: Detecting schedule type...
+2026-06-20 12:42:46,348 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-20 12:42:47,294 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:47,353 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-20 12:42:47,370 [INFO] visa_bot: ✅ Past waiting room
+2026-06-20 12:42:49,200 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-20 12:42:50,059 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:50,658 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-20 12:42:50,659 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-20 12:42:51,685 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-20 12:42:51,686 [INFO] visa_bot: Filtering dates to range: 2026-06-20 → 2026-07-31
+2026-06-20 12:42:51,697 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-20 12:42:54,420 [INFO] visa_bot: Found 7 dates after scrolling 2 months!
+2026-06-20 12:42:54,491 [INFO] visa_bot: ⏭ Skipping 2026-09-09 — outside configured range
+2026-06-20 12:42:54,566 [INFO] visa_bot: ⏭ Skipping 2026-09-14 — outside configured range
+2026-06-20 12:42:54,624 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-20 12:42:54,660 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-20 12:42:54,713 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-20 12:42:54,756 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-20 12:42:54,797 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-20 12:42:54,797 [INFO] visa_bot: Total available dates: 0
+2026-06-20 12:42:54,798 [INFO] visa_bot: ❌ No available appointment dates found
+2026-06-20 12:42:54,799 [INFO] visa_bot: No slots found for ahnafrafid10
+2026-06-20 12:42:55,837 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:56,479 [INFO] visa_bot: Browser stopped
+2026-06-20 12:42:56,495 [INFO] visa_bot: Next scan in 0 min. Send /scan to run immediately.
+2026-06-20 12:42:57,894 [INFO] visa_bot: Stopping...
+2026-06-20 12:42:57,895 [INFO] visa_bot: Scan aborted by command
+2026-06-20 12:42:59,933 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-20 12:42:59,936 [INFO] visa_bot: Done.
