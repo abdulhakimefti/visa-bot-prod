@@ -48,6 +48,7 @@ class VisaAgent:
         self._abort_scan      = asyncio.Event()   # signal current scan to stop (/stop)
         self._scanning        = False
         self._current_scraper: VisaScraper | None = None
+        self._scrapers: list = []   # all scrapers running in parallel (realtime)
         self.scan_count       = 0
         self._last_session_clear = 0.0   # timestamp of last 30-min session wipe
 
@@ -116,9 +117,20 @@ class VisaAgent:
         - Closes any open browser immediately
         """
         self._abort_scan.set()
+        # Abort + close ALL parallel scrapers (realtime mode)
+        for sc in list(getattr(self, "_scrapers", [])):
+            try:
+                sc.abort()
+            except Exception:
+                pass
+            try:
+                await sc.stop()
+            except Exception:
+                pass
+        self._scrapers = []
         if self._current_scraper:
             try:
-                self._current_scraper.abort()   # stops all internal loops
+                self._current_scraper.abort()
             except Exception:
                 pass
             try:
@@ -128,7 +140,241 @@ class VisaAgent:
             self._current_scraper = None
         self._scanning = False
         log.info("Scan aborted by command")
+    # ------------------------------------------------------------------ #
+    #  REAL-TIME single-account mode
+    # ------------------------------------------------------------------ #
 
+    async def _seconds_until_next_minute(self, lead_seconds: float = 6.0) -> float:
+        """Sleep length so we wake `lead_seconds` before the next :00 boundary
+        (so the calendar read lands right on the new minute)."""
+        now = datetime.now()
+        secs_into_minute = now.second + now.microsecond / 1_000_000.0
+        until_next = 60.0 - secs_into_minute
+        sleep_for = until_next - lead_seconds
+        if sleep_for < 0:
+            sleep_for += 60.0
+        return sleep_for
+
+    async def _abortable_sleep(self, seconds: float):
+        """Sleep that wakes immediately on /stop."""
+        slept = 0.0
+        step = 0.25
+        while slept < seconds:
+            if self._abort_scan.is_set() or self._stop_event.is_set():
+                return
+            await asyncio.sleep(min(step, seconds - slept))
+            slept += step
+
+    # ------------------------------------------------------------------ #
+    #  One account's persistent real-time worker (runs in parallel)
+    # ------------------------------------------------------------------ #
+
+    async def _realtime_account_worker(self, account: dict):
+        """Keeps ONE account's browser open and, every minute, reloads + checks
+        the calendar. Re-logs in on breakage. Books + stops on slot found.
+        Many of these run together via asyncio.gather — one per account."""
+        name = account.get("username", "Account")
+        acc_date_from = account.get("date_from") or settings.date_from
+        acc_date_to   = account.get("date_to")   or settings.date_to
+
+        scraper = None
+        booked = False
+
+        try:
+            while not self._abort_scan.is_set() and not self._stop_event.is_set():
+                if (await get_config("agent_paused")) == "1":
+                    log.info(f"[{name}] Paused — worker exiting")
+                    break
+
+                # (Re)establish this account's calendar page if needed
+                if scraper is None:
+                    scraper = VisaScraper(
+                        account_name=name,
+                        account_security_answers=account.get("security_answers", {}),
+                        account_date_from=acc_date_from,
+                        account_date_to=acc_date_to,
+                    )
+                    self._scrapers.append(scraper)   # track for /stop
+                    try:
+                        await scraper.start()
+                        scraper._login_username = account["username"]
+                        scraper._login_password = account["password"]
+                    except Exception as e:
+                        log.error(f"[{name}] Browser start failed: {e}")
+                        try:
+                            await scraper.stop()
+                        except Exception:
+                            pass
+                        try:
+                            self._scrapers.remove(scraper)
+                        except ValueError:
+                            pass
+                        scraper = None
+                        await self._abortable_sleep(10)
+                        continue
+
+                    ready = False
+                    try:
+                        ready = await scraper.prepare_calendar_page()
+                    except Exception as e:
+                        from core.scraper import ScanAborted
+                        if isinstance(e, ScanAborted):
+                            break
+                        log.error(f"[{name}] prepare_calendar_page raised: {e}")
+
+                    if not ready:
+                        log.info(f"[{name}] Could not prepare calendar — retrying")
+                        await notifier.send_telegram(
+                            f"⚠️ Login/calendar setup failed for <b>{name}</b> — retrying."
+                        )
+                        try:
+                            await scraper.stop()
+                        except Exception:
+                            pass
+                        try:
+                            self._scrapers.remove(scraper)
+                        except ValueError:
+                            pass
+                        scraper = None
+                        await self._abortable_sleep(15)
+                        continue
+
+                    await notifier.send_telegram(
+                        f"✅ <b>{name}</b> logged in. Watching calendar every minute."
+                    )
+
+                # Sleep until ~3s before the next minute boundary
+                sleep_for = await self._seconds_until_next_minute(lead_seconds=3.0)
+                await self._abortable_sleep(sleep_for)
+                if self._abort_scan.is_set() or self._stop_event.is_set():
+                    break
+
+                # Reload + read calendar (lands ~on :00)
+                try:
+                    status, slots = await scraper.reload_and_read_calendar()
+                except Exception as e:
+                    from core.scraper import ScanAborted
+                    if isinstance(e, ScanAborted):
+                        break
+                    log.error(f"[{name}] reload_and_read_calendar raised: {e}")
+                    status, slots = "need_relogin", []
+
+                now_str = datetime.now().strftime("%H:%M:%S")
+
+                if status == "need_relogin":
+                    log.info(f"[{name}] Session/page broke — re-login")
+                    await notifier.send_telegram(
+                        f"♻️ Session ended for <b>{name}</b> — logging in again."
+                    )
+                    try:
+                        await scraper.stop()
+                    except Exception:
+                        pass
+                    try:
+                        self._scrapers.remove(scraper)
+                    except ValueError:
+                        pass
+                    scraper = None
+                    continue
+
+                await log_scan("found" if slots else "empty", slots_found=len(slots))
+
+                if not slots:
+                    log.info(f"[{name}] [{now_str}] No slots this minute")
+                    await notifier.send_telegram(
+                        f"🔍 [{now_str}] No slots — <b>{name}</b>"
+                    )
+                    continue
+
+                # Slot found!
+                log.info(f"[{name}] [{now_str}] 🎉 {len(slots)} slot(s) found")
+                await notifier.send_telegram(
+                    f"🎯 [{now_str}] {len(slots)} slot(s) found — <b>{name}</b>!"
+                )
+                saved_ids = []
+                for slot in slots:
+                    sid = await save_slot(slot.slot_date, slot.slot_time,
+                                          slot.location, slot.slots_available)
+                    saved_ids.append(sid)
+
+                if settings.auto_book:
+                    await self._book_slot(scraper, slots[0], account, saved_ids[0])
+                    booked = True
+                    break
+                else:
+                    await self._ask_and_book(scraper, slots, account, saved_ids)
+                    booked = True
+                    break
+
+        except Exception as e:
+            from core.scraper import ScanAborted
+            if not isinstance(e, ScanAborted):
+                log.error(f"[{name}] worker error: {e}", exc_info=True)
+        finally:
+            if scraper is not None:
+                try:
+                    await scraper.stop()
+                except Exception:
+                    pass
+                try:
+                    self._scrapers.remove(scraper)
+                except ValueError:
+                    pass
+        return booked
+
+    # ------------------------------------------------------------------ #
+    #  Real-time loop — launches one worker per account, in parallel
+    # ------------------------------------------------------------------ #
+
+    async def run_realtime_loop(self):
+        """Launch a persistent real-time worker for EVERY configured account,
+        all running in parallel. Each keeps its own browser open and checks the
+        calendar every minute on :00. Number of accounts = number of browsers,
+        controlled entirely from Telegram (/setup, /addaccount, /accounts)."""
+        if self._scanning:
+            log.warning("Realtime loop already running — skipping")
+            return
+
+        if (await get_config("agent_paused")) == "1":
+            log.info("Agent paused — not starting realtime loop")
+            return
+
+        if not await self._load_config():
+            await notifier.send_telegram("⚠️ <b>Bot not configured.</b> Send /setup first.")
+            return
+
+        accounts = await self._get_accounts()
+        if not accounts:
+            await notifier.send_telegram("⚠️ <b>No accounts.</b> Send /setup or /addaccount.")
+            return
+
+        self._scanning = True
+        self._abort_scan.clear()
+        self._scrapers = []   # all parallel scrapers, for /stop
+
+        await notifier.send_telegram(
+            f"⏱ <b>Real-time mode started</b>\n"
+            f"👥 {len(accounts)} account(s) in parallel\n"
+            f"🔁 Each checks every minute, right on :00 seconds.\n"
+            f"🌐 One browser per account stays open."
+        )
+
+        try:
+            tasks = [
+                self._realtime_account_worker(account)
+                for account in accounts
+            ]
+            await asyncio.gather(*tasks, return_exceptions=True)
+        finally:
+            self._scanning = False
+            for sc in list(self._scrapers):
+                try:
+                    await sc.stop()
+                except Exception:
+                    pass
+            self._scrapers = []
+            self._current_scraper = None
+            await notifier.send_telegram("🛑 Real-time mode stopped.")
     # ------------------------------------------------------------------ #
     #  Main scan cycle
     # ------------------------------------------------------------------ #
@@ -416,14 +662,16 @@ class VisaAgent:
                 clear_all_sessions()
                 self._last_session_clear = now_ts
 
-            await self.run_scan_cycle()
+            # REAL-TIME MODE: this runs its own internal every-minute loop and
+            # only returns when a slot is booked, /stop is pressed, or it's
+            # paused. So we don't need the old interval-based wait here.
+            await self.run_realtime_loop()
 
-            interval_secs = max(0.1, settings.scan_interval_minutes) * 60
-            log.info(f"Next scan in {settings.scan_interval_minutes} min. "
-                     f"Send /scan to run immediately.")
+            # If the realtime loop returned (booked/stopped/paused), wait for a
+            # /resume or /scan before starting it again.
+            log.info("Realtime loop ended — waiting for /resume or /scan.")
             try:
-                await asyncio.wait_for(self._force_scan.wait(), timeout=interval_secs)
-                log.info("Scan triggered early by command")
+                await asyncio.wait_for(self._force_scan.wait(), timeout=3600)
             except asyncio.TimeoutError:
                 pass
 

@@ -909,7 +909,7 @@ class VisaScraper:
     # ------------------------------------------------------------------ #
 
     async def login(self) -> bool:
-        log.info(f"Logging in as: {settings.portal_username}")
+        log.info(f"Logging in as: {getattr(self, '_login_username', '') or settings.portal_username}")
 
         # Try saved session first — skips login form + security questions.
         # Cloudflare may STILL appear once, so we keep clicking it. With a valid
@@ -1022,10 +1022,12 @@ class VisaScraper:
 
         try:
             await self._page.wait_for_selector("#signInName", timeout=60000)
-            await self._page.fill("#signInName", settings.portal_username)
+            _user = getattr(self, "_login_username", "") or settings.portal_username
+            _pass = getattr(self, "_login_password", "") or settings.portal_password
+            await self._page.fill("#signInName", _user)
             log.info("Username filled")
             await self._sleep(0.2, 0.4)
-            await self._page.fill("#password", settings.portal_password)
+            await self._page.fill("#password", _pass)
             log.info("Password filled")
             await self._sleep(0.2, 0.4)
             await self._page.click("#continue")
@@ -1562,7 +1564,157 @@ class VisaScraper:
         log.info(f"✅ Total slots found: {len(slots)}")
         await self.screenshot("scan_complete")
         return slots
+    # ================================================================== #
+    #  REAL-TIME MODE: prepare calendar page once (login + navigate)
+    # ================================================================== #
 
+    async def prepare_calendar_page(self) -> bool:
+        """One-time setup: login, go to schedule page, select DHAKA, load
+        calendar. After this the browser STAYS OPEN on the calendar page so
+        we can just reload it every minute instead of logging in again."""
+        try:
+            if not await self.login():
+                log.error("prepare_calendar_page: login failed")
+                return False
+            if not await self._navigate_to_schedule_page():
+                log.error("prepare_calendar_page: could not reach schedule page")
+                return False
+            if not await self._select_post_and_load_calendar():
+                log.error("prepare_calendar_page: calendar did not load")
+                return False
+            log.info("✅ Calendar page ready — browser will stay open for reloads")
+            return True
+        except ScanAborted:
+            raise
+        except Exception as e:
+            log.error(f"prepare_calendar_page error: {e}", exc_info=True)
+            return False
+
+    # ================================================================== #
+    #  REAL-TIME MODE: reload + re-check calendar (no login)
+    # ================================================================== #
+
+    async def reload_and_read_calendar(self) -> tuple[str, List[AppointmentSlot]]:
+        """Reload the schedule page, re-handle Cloudflare / waiting room if they
+        appear, re-select DHAKA, read the calendar and any time slots.
+
+        Returns (status, slots):
+          "ok"           — reloaded and read fine (slots may be empty)
+          "need_relogin" — session/page broke; caller must close browser and
+                            run prepare_calendar_page() again
+        Never logs in, never closes the browser itself."""
+        slots: List[AppointmentSlot] = []
+        try:
+            try:
+                await self._page.reload(wait_until="domcontentloaded", timeout=45000)
+            except ScanAborted:
+                raise
+            except Exception as e:
+                log.warning(f"Reload failed: {e} — will re-login")
+                return ("need_relogin", slots)
+
+            await self._sleep(0.5, 1.0)
+
+            try:
+                body_peek = (await self._page.inner_text("body")).lower()
+            except Exception:
+                body_peek = ""
+
+            if any(s in body_peek for s in ["verify you are human", "just a moment",
+                    "performing security verification", "checking your browser"]):
+                log.info("Cloudflare appeared after reload — handling")
+                await self._handle_cloudflare(timeout=90)
+
+            if any(s in body_peek for s in ["waiting room", "you are now in line",
+                    "thank you for your patience", "you are being redirected",
+                    "do not close your browser", "your position"]):
+                log.info("Waiting room appeared after reload — handling")
+                await self._handle_waiting_room(timeout=600)
+
+            if await self._login_form_visible():
+                log.info("Login form visible after reload — session expired")
+                return ("need_relogin", slots)
+
+            on_schedule = False
+            try:
+                on_schedule = await self._page.is_visible("#post_select", timeout=5000)
+            except Exception:
+                on_schedule = False
+
+            if not on_schedule:
+                log.info("Not on schedule page after reload — trying to navigate back")
+                if not await self._navigate_to_schedule_page():
+                    log.info("Could not get back to schedule page — will re-login")
+                    return ("need_relogin", slots)
+
+            if not await self._select_post_and_load_calendar():
+                log.info("Calendar did not load after reload — will re-login")
+                return ("need_relogin", slots)
+
+            available_dates = await self._read_calendar_dates()
+            if not available_dates:
+                log.info("No available dates this minute")
+                return ("ok", slots)
+
+            for date_info in available_dates:
+                self._check_abort()
+                try:
+                    date_str = date_info["date_str"]
+                    day = date_info["day"]
+
+                    clicked = False
+                    green_links = await self._page.query_selector_all(
+                        "td.greenday a.ui-state-default"
+                    )
+                    for link in green_links:
+                        link_text = (await link.text_content() or "").strip()
+                        if link_text == str(day):
+                            await link.click()
+                            log.info(f"Clicked date: {date_str}")
+                            clicked = True
+                            break
+                    if not clicked:
+                        continue
+
+                    await self._sleep(1.0, 2.0)
+
+                    time_rows = await self._page.query_selector_all(
+                        "#time_select tr:has(input[name='schedule-entries'])"
+                    )
+                    for row in time_rows:
+                        try:
+                            radio = await row.query_selector("input[name='schedule-entries']")
+                            if not radio:
+                                continue
+                            slot_id = await radio.get_attribute("value") or ""
+                            slot_count = await radio.get_attribute("data-slots") or "0"
+                            tds = await row.query_selector_all("td")
+                            time_text = ""
+                            if len(tds) >= 2:
+                                time_text = (await tds[1].text_content() or "").strip()
+                            avail = int(slot_count) if slot_count.isdigit() else 1
+                            slots.append(AppointmentSlot(
+                                slot_date=date_str,
+                                slot_time=time_text,
+                                location="DHAKA",
+                                slots_available=avail,
+                                raw_element_id=slot_id,
+                            ))
+                            log.info(f"  📍 Slot: {date_str} {time_text} (avail: {slot_count})")
+                        except Exception:
+                            pass
+                except ScanAborted:
+                    raise
+                except Exception as e:
+                    log.error(f"Error reading date {date_info.get('date_str','?')}: {e}")
+
+            return ("ok", slots)
+
+        except ScanAborted:
+            raise
+        except Exception as e:
+            log.error(f"reload_and_read_calendar error: {e}", exc_info=True)
+            return ("need_relogin", slots)
     # ================================================================== #
     #  REAL PORTAL: Book Appointment
     # ================================================================== #
