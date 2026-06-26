@@ -169,13 +169,21 @@ class VisaAgent:
     #  One account's persistent real-time worker (runs in parallel)
     # ------------------------------------------------------------------ #
 
-    async def _realtime_account_worker(self, account: dict):
+    async def _realtime_account_worker(self, account: dict, start_delay: float = 0):
         """Keeps ONE account's browser open and, every minute, reloads + checks
         the calendar. Re-logs in on breakage. Books + stops on slot found.
-        Many of these run together via asyncio.gather — one per account."""
+        Many of these run together via asyncio.gather — one per account.
+        `start_delay` only staggers the FIRST browser launch so windows don't
+        all open at once; the per-minute :00 scan timing is unaffected."""
         name = account.get("username", "Account")
         acc_date_from = account.get("date_from") or settings.date_from
         acc_date_to   = account.get("date_to")   or settings.date_to
+
+        # Stagger only the initial browser open (not the scan timing)
+        if start_delay > 0:
+            await self._abortable_sleep(start_delay)
+            if self._abort_scan.is_set() or self._stop_event.is_set():
+                return False
 
         scraper = None
         booked = False
@@ -360,10 +368,13 @@ class VisaAgent:
         )
 
         try:
-            tasks = [
-                self._realtime_account_worker(account)
-                for account in accounts
-            ]
+            # Start each worker a few seconds apart so the visible Chrome
+            # windows don't launch at the exact same instant and collide.
+            # This only staggers the BROWSER OPENING — every worker still
+            # scans together on the :00 second once it's running.
+            tasks = []
+            for i, account in enumerate(accounts):
+                tasks.append(self._realtime_account_worker(account, start_delay=i * 8))
             await asyncio.gather(*tasks, return_exceptions=True)
         finally:
             self._scanning = False

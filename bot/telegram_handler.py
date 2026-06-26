@@ -16,13 +16,6 @@ import asyncio
 import json
 import re
 from datetime import datetime
-
-from telegram.ext import (
-    Application, CommandHandler, MessageHandler,
-    ContextTypes, filters, ConversationHandler, CallbackQueryHandler,
-    TypeHandler, ApplicationHandlerStop,
-)
-
 from telegram import (
     Update, BotCommand,
     InlineKeyboardButton, InlineKeyboardMarkup,
@@ -30,6 +23,7 @@ from telegram import (
 from telegram.ext import (
     Application, CommandHandler, MessageHandler,
     ContextTypes, filters, ConversationHandler, CallbackQueryHandler,
+    TypeHandler, ApplicationHandlerStop,
 )
 from telegram.constants import ParseMode
 
