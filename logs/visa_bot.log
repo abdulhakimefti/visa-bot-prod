@@ -689,3 +689,1124 @@ Call log:
 2026-06-26 12:29:00,773 [INFO] visa_bot: Scan aborted by command
 2026-06-26 12:29:00,778 [INFO] visa_bot: Browser stopped
 2026-06-26 12:29:02,487 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-26 23:58:07,549 [INFO] visa_bot: =======================================================
+2026-06-26 23:58:07,552 [INFO] visa_bot:    VISA APPOINTMENT BOT — Starting
+2026-06-26 23:58:07,552 [INFO] visa_bot: =======================================================
+2026-06-26 23:58:07,572 [INFO] visa_bot: Database ready ✓
+2026-06-26 23:58:16,043 [INFO] visa_bot: Telegram bot started ✓
+2026-06-26 23:58:16,050 [INFO] visa_bot: Testing Telegram connection...
+2026-06-26 23:58:16,054 [INFO] visa_bot: Testing Telegram connection...
+2026-06-26 23:58:18,724 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-26 23:58:18,728 [INFO] visa_bot: ✅ Telegram connection test passed!
+2026-06-26 23:58:18,739 [INFO] visa_bot: Existing config found — resuming
+2026-06-26 23:58:20,314 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-26 23:58:20,388 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-20 → 2026-07-31
+2026-06-26 23:58:20,388 [INFO] visa_bot: Bot running. Press Ctrl+C to stop.
+2026-06-26 23:58:20,435 [INFO] visa_bot: 🗑️ Cleared 1 saved session(s)
+2026-06-26 23:58:20,670 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-20 → 2026-07-31
+2026-06-26 23:58:22,408 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-26 23:58:24,707 [INFO] visa_bot: Browser started
+2026-06-26 23:58:24,711 [INFO] visa_bot: Logging in as: halimahossain6666
+2026-06-26 23:58:27,309 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-26 23:58:27,310 [INFO] visa_bot: CF iframe not found yet
+2026-06-26 23:58:27,331 [INFO] visa_bot: Retrying in 2s...
+2026-06-26 23:58:29,360 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-26 23:58:29,360 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-26 23:58:29,409 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-26 23:58:30,499 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-26 23:58:33,739 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-26 23:58:36,185 [INFO] visa_bot: Browser stopped
+2026-06-26 23:58:36,186 [INFO] visa_bot: Scan aborted by command
+2026-06-26 23:58:37,766 [INFO] visa_bot: Retrying in 2s...
+2026-06-26 23:58:39,778 [INFO] visa_bot: Browser stopped
+2026-06-26 23:58:42,504 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-26 23:58:42,506 [INFO] visa_bot: Realtime loop ended — waiting for /resume or /scan.
+2026-06-27 00:00:01,508 [INFO] visa_bot: Account #27 saved: Amran_Mojumder_Fahad
+2026-06-27 00:00:02,039 [INFO] visa_bot: 🗑️ Cleared 0 saved session(s)
+2026-06-27 00:00:02,093 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-26 → 2026-07-31
+2026-06-27 00:00:03,710 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:00:06,390 [INFO] visa_bot: Browser started
+2026-06-27 00:00:06,397 [INFO] visa_bot: Logging in as: Amran_Mojumder_Fahad
+2026-06-27 00:00:07,655 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-27 00:00:07,666 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:00:07,668 [INFO] visa_bot: Waiting for login page... 0s elapsed
+2026-06-27 00:00:10,757 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-27 00:00:10,758 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-27 00:00:10,796 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-27 00:00:11,675 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-27 00:00:16,777 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:00:20,853 [INFO] visa_bot: Retrying in 2s...
+2026-06-27 00:00:22,904 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-27 00:00:22,905 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-27 00:00:22,935 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-27 00:00:23,509 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-27 00:00:25,175 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:00:29,282 [INFO] visa_bot: ✅ CF cleared — no challenge signs!
+2026-06-27 00:00:32,341 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:00:32,418 [INFO] visa_bot: ⏳ Waiting room (~1 minutes) — 3s elapsed
+2026-06-27 00:00:37,632 [INFO] visa_bot: ⏳ Waiting room (~1 minutes) — 8s elapsed
+2026-06-27 00:00:42,841 [INFO] visa_bot: ⏳ Waiting room (~1 minutes) — 13s elapsed
+2026-06-27 00:00:48,095 [INFO] visa_bot: ⏳ Waiting room (~1 minutes) — 18s elapsed
+2026-06-27 00:00:53,320 [INFO] visa_bot: ⏳ Waiting room (~1 minutes) — 24s elapsed
+2026-06-27 00:00:58,514 [INFO] visa_bot: ⏳ Waiting room (~1 minutes) — 29s elapsed
+2026-06-27 00:01:03,650 [INFO] visa_bot: Waiting for login page... 56s elapsed
+2026-06-27 00:01:06,797 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-27 00:01:06,799 [INFO] visa_bot: CF iframe not found yet
+2026-06-27 00:01:06,827 [INFO] visa_bot: ✅ CF cleared — no challenge signs!
+2026-06-27 00:01:12,143 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:01:17,741 [INFO] visa_bot: ⏳ Waiting room (~1 minutes) — 10s elapsed
+2026-06-27 00:01:22,935 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:01:22,937 [INFO] visa_bot: Waiting for login page... 75s elapsed
+2026-06-27 00:01:25,962 [INFO] visa_bot: Login form detected
+2026-06-27 00:01:26,908 [INFO] visa_bot: Username filled
+2026-06-27 00:01:27,278 [INFO] visa_bot: Password filled
+2026-06-27 00:01:27,739 [INFO] visa_bot: Login submitted
+2026-06-27 00:01:27,789 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:01:27,808 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:01:30,537 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-27 00:01:31,577 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-27 00:01:31,579 [INFO] visa_bot: Security question: What is your favorite food? | matched keyword: food
+2026-06-27 00:01:31,728 [INFO] visa_bot: Filled #kba2_response
+2026-06-27 00:01:31,732 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-27 00:01:31,800 [INFO] visa_bot: Filled #kba3_response
+2026-06-27 00:01:32,453 [INFO] visa_bot: Security questions submitted
+2026-06-27 00:01:49,754 [INFO] visa_bot: Returned to US Visa Scheduling portal
+2026-06-27 00:01:53,029 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:01:53,921 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-27 00:01:53,956 [WARNING] visa_bot: Login result unclear — taking screenshot
+2026-06-27 00:01:53,957 [ERROR] visa_bot: prepare_calendar_page: login failed
+2026-06-27 00:01:53,958 [INFO] visa_bot: [Amran_Mojumder_Fahad] Could not prepare calendar — retrying
+2026-06-27 00:02:04,675 [ERROR] visa_bot: ❌ Telegram send error: 
+2026-06-27 00:02:05,566 [INFO] visa_bot: Browser stopped
+2026-06-27 00:02:24,517 [INFO] visa_bot: Browser started
+2026-06-27 00:02:24,524 [INFO] visa_bot: Logging in as: Amran_Mojumder_Fahad
+2026-06-27 00:02:29,265 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-27 00:02:29,266 [INFO] visa_bot: CF iframe not found yet
+2026-06-27 00:02:29,282 [INFO] visa_bot: Retrying in 2s...
+2026-06-27 00:02:31,326 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-27 00:02:31,327 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-27 00:02:31,413 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-27 00:02:32,868 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-27 00:02:36,028 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:02:40,080 [INFO] visa_bot: Retrying in 2s...
+2026-06-27 00:02:42,120 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-27 00:02:42,121 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-27 00:02:42,140 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-27 00:02:42,696 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-27 00:02:44,256 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:02:52,401 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-27 00:02:52,416 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:02:52,417 [INFO] visa_bot: Waiting for login page... 26s elapsed
+2026-06-27 00:02:55,444 [INFO] visa_bot: Login form detected
+2026-06-27 00:02:56,240 [INFO] visa_bot: Username filled
+2026-06-27 00:02:56,582 [INFO] visa_bot: Password filled
+2026-06-27 00:02:57,110 [INFO] visa_bot: Login submitted
+2026-06-27 00:02:57,156 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:02:57,176 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:02:59,667 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-27 00:03:00,709 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-27 00:03:00,711 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-27 00:03:00,815 [INFO] visa_bot: Filled #kba1_response
+2026-06-27 00:03:00,816 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-27 00:03:00,843 [INFO] visa_bot: Filled #kba3_response
+2026-06-27 00:03:01,413 [INFO] visa_bot: Security questions submitted
+2026-06-27 00:03:15,072 [INFO] visa_bot: Returned to US Visa Scheduling portal
+2026-06-27 00:03:17,458 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:03:18,413 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-27 00:03:18,522 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-27 00:03:18,551 [INFO] visa_bot: 💾 Session saved for Amran_Mojumder_Fahad
+2026-06-27 00:03:22,941 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:03:26,419 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:03:26,423 [INFO] visa_bot: Navigating to homepage...
+2026-06-27 00:03:34,179 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-27 00:03:34,190 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:03:35,648 [INFO] visa_bot: Detecting schedule type...
+2026-06-27 00:03:35,679 [WARNING] visa_bot: No schedule link found in sidebar — trying direct URL
+2026-06-27 00:03:38,694 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-27 00:03:38,827 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:03:41,838 [ERROR] visa_bot: Schedule page not loaded
+2026-06-27 00:03:41,839 [ERROR] visa_bot: prepare_calendar_page: could not reach schedule page
+2026-06-27 00:03:41,839 [INFO] visa_bot: [Amran_Mojumder_Fahad] Could not prepare calendar — retrying
+2026-06-27 00:03:45,333 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:03:46,514 [INFO] visa_bot: Browser stopped
+2026-06-27 00:04:04,183 [INFO] visa_bot: Browser started
+2026-06-27 00:04:04,184 [INFO] visa_bot: Logging in as: Amran_Mojumder_Fahad
+2026-06-27 00:04:04,258 [INFO] visa_bot: ♻️ Session loaded for Amran_Mojumder_Fahad
+2026-06-27 00:04:04,259 [INFO] visa_bot: Trying saved session — checking if still valid...
+2026-06-27 00:04:13,130 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-27 00:04:13,209 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:04:15,657 [INFO] visa_bot: ✅ Session still valid — login skipped!
+2026-06-27 00:04:18,820 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:04:20,590 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:04:20,593 [INFO] visa_bot: Navigating to homepage...
+2026-06-27 00:04:25,072 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-27 00:04:25,137 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:04:26,544 [INFO] visa_bot: Detecting schedule type...
+2026-06-27 00:04:26,577 [WARNING] visa_bot: No schedule link found in sidebar — trying direct URL
+2026-06-27 00:04:31,619 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-27 00:04:31,620 [INFO] visa_bot: CF iframe not found yet
+2026-06-27 00:04:31,648 [INFO] visa_bot: ✅ CF cleared — no challenge signs!
+2026-06-27 00:04:31,681 [INFO] visa_bot: ✅ Past waiting room
+2026-06-27 00:04:37,639 [ERROR] visa_bot: Schedule page not loaded
+2026-06-27 00:04:37,641 [ERROR] visa_bot: prepare_calendar_page: could not reach schedule page
+2026-06-27 00:04:37,642 [INFO] visa_bot: [Amran_Mojumder_Fahad] Could not prepare calendar — retrying
+2026-06-27 00:04:39,434 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:04:40,255 [INFO] visa_bot: Browser stopped
+2026-06-27 00:04:41,383 [INFO] visa_bot: Stopping...
+2026-06-27 00:04:41,385 [INFO] visa_bot: Scan aborted by command
+2026-06-27 00:04:44,345 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:04:48,206 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-27 00:04:48,262 [INFO] visa_bot: Done.
+2026-06-28 01:28:52,172 [INFO] visa_bot: =======================================================
+2026-06-28 01:28:52,174 [INFO] visa_bot:    VISA APPOINTMENT BOT — Starting
+2026-06-28 01:28:52,175 [INFO] visa_bot: =======================================================
+2026-06-28 01:28:52,210 [INFO] visa_bot: Database ready ✓
+2026-06-28 01:28:55,308 [INFO] visa_bot: Telegram bot started ✓
+2026-06-28 01:28:55,309 [INFO] visa_bot: Testing Telegram connection...
+2026-06-28 01:28:55,310 [INFO] visa_bot: Testing Telegram connection...
+2026-06-28 01:28:56,840 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:28:56,843 [INFO] visa_bot: ✅ Telegram connection test passed!
+2026-06-28 01:28:56,854 [INFO] visa_bot: Existing config found — resuming
+2026-06-28 01:28:58,374 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:28:58,438 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-26 → 2026-07-31
+2026-06-28 01:28:58,439 [INFO] visa_bot: Bot running. Press Ctrl+C to stop.
+2026-06-28 01:28:58,519 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-26 → 2026-07-31
+2026-06-28 01:28:59,907 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:29:08,875 [INFO] visa_bot: 🗑️ Cleared 1 saved session(s)
+2026-06-28 01:29:21,209 [INFO] visa_bot: Browser started
+2026-06-28 01:29:21,210 [INFO] visa_bot: Logging in as: Amran_Mojumder_Fahad
+2026-06-28 01:29:25,483 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:29:25,484 [INFO] visa_bot: CF iframe not found yet
+2026-06-28 01:29:25,503 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 01:29:27,555 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:29:27,557 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 01:29:27,654 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 01:29:28,743 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 01:29:30,259 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:29:34,330 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 01:29:36,381 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:29:36,382 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 01:29:36,410 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 01:29:36,991 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 01:29:38,510 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:29:44,383 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 01:29:44,394 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:29:44,394 [INFO] visa_bot: Waiting for login page... 22s elapsed
+2026-06-28 01:29:47,420 [INFO] visa_bot: Login form detected
+2026-06-28 01:29:48,411 [INFO] visa_bot: Username filled
+2026-06-28 01:29:48,687 [INFO] visa_bot: Password filled
+2026-06-28 01:29:49,274 [INFO] visa_bot: Login submitted
+2026-06-28 01:29:49,430 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:29:49,452 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:29:52,046 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 01:29:53,093 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 01:29:53,096 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-28 01:29:53,229 [INFO] visa_bot: Filled #kba1_response
+2026-06-28 01:29:53,231 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-28 01:29:53,290 [INFO] visa_bot: Filled #kba3_response
+2026-06-28 01:29:54,036 [INFO] visa_bot: Security questions submitted
+2026-06-28 01:31:01,651 [INFO] visa_bot: Login successful after security questions
+2026-06-28 01:31:03,091 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:31:03,616 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 01:31:03,687 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 01:31:03,721 [INFO] visa_bot: 💾 Session saved for Amran_Mojumder_Fahad
+2026-06-28 01:31:05,233 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:31:06,669 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:31:06,673 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 01:31:08,333 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:31:08,358 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:31:09,593 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 01:31:09,635 [WARNING] visa_bot: No schedule link found in sidebar — trying direct URL
+2026-06-28 01:31:11,711 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:31:11,719 [INFO] visa_bot: CF iframe not found yet
+2026-06-28 01:31:11,830 [INFO] visa_bot: ✅ CF cleared — no challenge signs!
+2026-06-28 01:31:11,860 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:31:14,431 [ERROR] visa_bot: Schedule page not loaded
+2026-06-28 01:31:14,432 [ERROR] visa_bot: prepare_calendar_page: could not reach schedule page
+2026-06-28 01:31:14,432 [INFO] visa_bot: [Amran_Mojumder_Fahad] Could not prepare calendar — retrying
+2026-06-28 01:31:15,874 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:31:16,647 [INFO] visa_bot: Browser stopped
+2026-06-28 01:31:34,163 [INFO] visa_bot: Browser started
+2026-06-28 01:31:34,165 [INFO] visa_bot: Logging in as: Amran_Mojumder_Fahad
+2026-06-28 01:31:34,255 [INFO] visa_bot: ♻️ Session loaded for Amran_Mojumder_Fahad
+2026-06-28 01:31:34,255 [INFO] visa_bot: Trying saved session — checking if still valid...
+2026-06-28 01:31:39,827 [INFO] visa_bot: Session check failed: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.usvisascheduling.com/en-US/", waiting until "domcontentloaded"
+ — deleting session, full login
+2026-06-28 01:31:39,834 [INFO] visa_bot: 🗑️ Deleted expired session for Amran_Mojumder_Fahad
+2026-06-28 01:31:39,895 [ERROR] visa_bot: Cannot reach portal: Page.goto: Target page, context or browser has been closed
+2026-06-28 01:31:39,895 [ERROR] visa_bot: prepare_calendar_page: login failed
+2026-06-28 01:31:39,896 [INFO] visa_bot: [Amran_Mojumder_Fahad] Could not prepare calendar — retrying
+2026-06-28 01:31:40,377 [INFO] visa_bot: Browser stopped
+2026-06-28 01:31:40,377 [INFO] visa_bot: Scan aborted by command
+2026-06-28 01:31:41,804 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:31:41,809 [INFO] visa_bot: Browser stopped
+2026-06-28 01:31:43,221 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:31:43,224 [INFO] visa_bot: Realtime loop ended — waiting for /resume or /scan.
+2026-06-28 01:31:43,233 [INFO] visa_bot: Agent paused — waiting for /resume
+2026-06-28 01:31:48,129 [INFO] visa_bot: 🗑️ Cleared 0 saved session(s)
+2026-06-28 01:31:50,024 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-26 → 2026-07-31
+2026-06-28 01:31:51,621 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:31:53,799 [INFO] visa_bot: Browser started
+2026-06-28 01:31:53,800 [INFO] visa_bot: Logging in as: halimahossain6666
+2026-06-28 01:31:55,030 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:31:55,045 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:31:55,047 [INFO] visa_bot: Waiting for login page... 0s elapsed
+2026-06-28 01:31:58,174 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:31:58,175 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 01:31:58,221 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 01:31:59,229 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 01:32:00,750 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:32:04,825 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 01:32:06,875 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:32:06,876 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 01:32:06,905 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 01:32:07,472 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 01:32:08,921 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:32:14,365 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 01:32:14,400 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:32:17,426 [INFO] visa_bot: Login form detected
+2026-06-28 01:32:18,481 [INFO] visa_bot: Username filled
+2026-06-28 01:32:18,890 [INFO] visa_bot: Password filled
+2026-06-28 01:32:19,409 [INFO] visa_bot: Login submitted
+2026-06-28 01:32:19,458 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:32:19,478 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:32:22,382 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 01:32:23,405 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 01:32:23,406 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-28 01:32:23,455 [INFO] visa_bot: Filled #kba1_response
+2026-06-28 01:32:23,456 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-28 01:32:23,483 [INFO] visa_bot: Filled #kba3_response
+2026-06-28 01:32:24,082 [INFO] visa_bot: Security questions submitted
+2026-06-28 01:32:31,784 [INFO] visa_bot: Login successful — portal content detected
+2026-06-28 01:32:33,272 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:32:34,162 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 01:32:34,331 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 01:32:34,349 [INFO] visa_bot: 💾 Session saved for halimahossain6666
+2026-06-28 01:32:35,740 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:32:37,233 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:32:37,236 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 01:32:38,956 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:32:38,986 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:32:40,488 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 01:32:41,744 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 01:32:43,223 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:32:43,286 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:32:43,306 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:32:45,074 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 01:32:46,423 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:32:47,147 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 01:32:47,148 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 01:32:48,188 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 01:32:48,190 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-28 01:32:49,644 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:33:01,128 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:33:01,882 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 01:33:01,883 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 01:33:02,918 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 01:33:02,920 [INFO] visa_bot: Filtering dates to range: 2026-06-28 → 2026-07-01
+2026-06-28 01:33:02,945 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-28 01:33:05,865 [INFO] visa_bot: Found 5 dates after scrolling 2 months!
+2026-06-28 01:33:06,029 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-28 01:33:06,104 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-28 01:33:06,163 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-28 01:33:06,229 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-28 01:33:06,289 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-28 01:33:06,291 [INFO] visa_bot: Total available dates: 0
+2026-06-28 01:33:06,292 [INFO] visa_bot: No available dates this minute
+2026-06-28 01:33:06,320 [INFO] visa_bot: [halimahossain6666] [01:33:06] No slots this minute
+2026-06-28 01:33:07,736 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:33:48,986 [INFO] visa_bot: Browser stopped
+2026-06-28 01:33:48,987 [INFO] visa_bot: Scan aborted by command
+2026-06-28 01:33:48,991 [INFO] visa_bot: Browser stopped
+2026-06-28 01:33:50,589 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:33:50,592 [INFO] visa_bot: Realtime loop ended — waiting for /resume or /scan.
+2026-06-28 01:34:46,956 [INFO] visa_bot: 🗑️ Cleared 1 saved session(s)
+2026-06-28 01:34:47,491 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-26 → 2026-07-31
+2026-06-28 01:34:48,960 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:34:51,104 [INFO] visa_bot: Browser started
+2026-06-28 01:34:51,112 [INFO] visa_bot: Logging in as: halimahossain6666
+2026-06-28 01:34:52,561 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:34:52,570 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:34:52,571 [INFO] visa_bot: Waiting for login page... 0s elapsed
+2026-06-28 01:34:55,778 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:34:55,779 [INFO] visa_bot: CF iframe not found yet
+2026-06-28 01:34:55,797 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 01:34:57,845 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:34:57,846 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 01:34:57,889 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 01:34:58,711 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 01:34:59,760 [INFO] visa_bot: Browser started
+2026-06-28 01:34:59,774 [INFO] visa_bot: Logging in as: kishore.rajdeep.shuvo.204111
+2026-06-28 01:35:00,118 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:01,071 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:35:03,074 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:03,075 [INFO] visa_bot: Waiting for login page... 2s elapsed
+2026-06-28 01:35:04,198 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 01:35:06,173 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:35:06,174 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 01:35:06,219 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 01:35:06,238 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:35:06,239 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 01:35:06,251 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 01:35:06,810 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 01:35:08,178 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 01:35:08,356 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:09,660 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:12,674 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 01:35:12,694 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:13,744 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 01:35:15,727 [INFO] visa_bot: Login form detected
+2026-06-28 01:35:15,795 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:35:15,797 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 01:35:15,828 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 01:35:16,424 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 01:35:16,814 [INFO] visa_bot: Username filled
+2026-06-28 01:35:17,124 [INFO] visa_bot: Password filled
+2026-06-28 01:35:17,553 [INFO] visa_bot: Login submitted
+2026-06-28 01:35:17,633 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:17,652 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:17,848 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:20,357 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 01:35:21,450 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 01:35:21,452 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-28 01:35:21,589 [INFO] visa_bot: Filled #kba1_response
+2026-06-28 01:35:21,590 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-28 01:35:21,629 [INFO] visa_bot: Filled #kba3_response
+2026-06-28 01:35:22,026 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 01:35:22,035 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:22,392 [INFO] visa_bot: Security questions submitted
+2026-06-28 01:35:25,056 [INFO] visa_bot: Login form detected
+2026-06-28 01:35:26,110 [INFO] visa_bot: Username filled
+2026-06-28 01:35:26,506 [INFO] visa_bot: Password filled
+2026-06-28 01:35:26,855 [INFO] visa_bot: Login submitted
+2026-06-28 01:35:26,897 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:26,914 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:29,387 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 01:35:30,419 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 01:35:30,421 [INFO] visa_bot: Security question: What high school did you attend? | matched keyword: school
+2026-06-28 01:35:30,551 [INFO] visa_bot: Filled #kba2_response
+2026-06-28 01:35:30,558 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-28 01:35:30,618 [INFO] visa_bot: Filled #kba3_response
+2026-06-28 01:35:30,643 [INFO] visa_bot: Login successful — portal content detected
+2026-06-28 01:35:31,152 [INFO] visa_bot: Security questions submitted
+2026-06-28 01:35:32,142 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:32,750 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 01:35:32,814 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 01:35:32,846 [INFO] visa_bot: 💾 Session saved for halimahossain6666
+2026-06-28 01:35:34,281 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:35,652 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:35,660 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 01:35:37,118 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:35:37,169 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:37,427 [INFO] visa_bot: Returned to US Visa Scheduling portal
+2026-06-28 01:35:38,525 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 01:35:38,801 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:39,405 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 01:35:39,496 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 01:35:39,514 [INFO] visa_bot: 💾 Session saved for kishore.rajdeep.shuvo.204111
+2026-06-28 01:35:40,932 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:41,733 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 01:35:42,309 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:42,313 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 01:35:43,119 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:43,248 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:35:43,274 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:43,571 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:35:43,600 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:45,042 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 01:35:45,505 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 01:35:46,494 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 01:35:46,955 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:47,863 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 01:35:47,864 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 01:35:47,897 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:47,961 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:35:47,985 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:35:48,902 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 01:35:48,903 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-28 01:35:50,235 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 01:35:50,338 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:51,667 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:35:52,710 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 01:35:52,711 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 01:35:53,747 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 01:35:53,748 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-28 01:35:55,307 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:36:00,362 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:36:00,846 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:36:01,227 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 01:36:01,229 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 01:36:01,708 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 01:36:01,709 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 01:36:02,270 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 01:36:02,271 [INFO] visa_bot: Filtering dates to range: 2026-06-28 → 2026-07-01
+2026-06-28 01:36:02,290 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-28 01:36:02,752 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 01:36:02,753 [INFO] visa_bot: Filtering dates to range: 2026-06-28 → 2026-07-01
+2026-06-28 01:36:02,773 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-28 01:36:04,979 [INFO] visa_bot: Found 5 dates after scrolling 2 months!
+2026-06-28 01:36:05,054 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-28 01:36:05,119 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-28 01:36:05,186 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-28 01:36:05,249 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-28 01:36:05,312 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-28 01:36:05,314 [INFO] visa_bot: Total available dates: 0
+2026-06-28 01:36:05,315 [INFO] visa_bot: No available dates this minute
+2026-06-28 01:36:05,357 [INFO] visa_bot: [kishore.rajdeep.shuvo.204111] [01:36:05] No slots this minute
+2026-06-28 01:36:06,730 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:36:08,475 [INFO] visa_bot: Found 5 dates after scrolling 2 months!
+2026-06-28 01:36:08,546 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-28 01:36:08,609 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-28 01:36:08,672 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-28 01:36:08,739 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-28 01:36:08,800 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-28 01:36:08,801 [INFO] visa_bot: Total available dates: 0
+2026-06-28 01:36:08,802 [INFO] visa_bot: No available dates this minute
+2026-06-28 01:36:08,844 [INFO] visa_bot: [halimahossain6666] [01:36:08] No slots this minute
+2026-06-28 01:36:10,257 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:36:58,460 [WARNING] visa_bot: Reload failed: Page.reload: Target page, context or browser has been closed — will re-login
+2026-06-28 01:36:58,461 [INFO] visa_bot: [halimahossain6666] Session/page broke — re-login
+2026-06-28 01:36:58,516 [WARNING] visa_bot: Reload failed: Page.reload: Target page, context or browser has been closed — will re-login
+2026-06-28 01:36:58,517 [INFO] visa_bot: [kishore.rajdeep.shuvo.204111] Session/page broke — re-login
+2026-06-28 01:36:59,899 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:00,311 [INFO] visa_bot: Browser stopped
+2026-06-28 01:37:00,411 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:00,870 [INFO] visa_bot: Browser stopped
+2026-06-28 01:37:02,311 [INFO] visa_bot: Browser started
+2026-06-28 01:37:02,312 [INFO] visa_bot: Logging in as: halimahossain6666
+2026-06-28 01:37:02,416 [INFO] visa_bot: ♻️ Session loaded for halimahossain6666
+2026-06-28 01:37:02,420 [INFO] visa_bot: Trying saved session — checking if still valid...
+2026-06-28 01:37:03,214 [INFO] visa_bot: Browser started
+2026-06-28 01:37:03,215 [INFO] visa_bot: Logging in as: kishore.rajdeep.shuvo.204111
+2026-06-28 01:37:03,335 [INFO] visa_bot: ♻️ Session loaded for kishore.rajdeep.shuvo.204111
+2026-06-28 01:37:03,336 [INFO] visa_bot: Trying saved session — checking if still valid...
+2026-06-28 01:37:10,338 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:37:10,376 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:37:10,492 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:37:10,537 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:37:13,116 [INFO] visa_bot: ✅ Session still valid — login skipped!
+2026-06-28 01:37:13,366 [INFO] visa_bot: ✅ Session still valid — login skipped!
+2026-06-28 01:37:14,470 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:14,988 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:15,905 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:15,908 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 01:37:16,421 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:16,425 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 01:37:17,435 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:37:17,472 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:37:17,736 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:37:17,771 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:37:18,671 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 01:37:18,717 [WARNING] visa_bot: No schedule link found in sidebar — trying direct URL
+2026-06-28 01:37:19,016 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 01:37:20,157 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 01:37:20,374 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 01:37:20,376 [INFO] visa_bot: CF iframe not found yet
+2026-06-28 01:37:20,423 [INFO] visa_bot: ✅ CF cleared — no challenge signs!
+2026-06-28 01:37:20,438 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:37:21,604 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:21,682 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 01:37:21,711 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 01:37:22,503 [ERROR] visa_bot: Schedule page not loaded
+2026-06-28 01:37:22,505 [ERROR] visa_bot: prepare_calendar_page: could not reach schedule page
+2026-06-28 01:37:22,510 [INFO] visa_bot: [kishore.rajdeep.shuvo.204111] Could not prepare calendar — retrying
+2026-06-28 01:37:23,601 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 01:37:23,930 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:24,633 [INFO] visa_bot: Browser stopped
+2026-06-28 01:37:25,035 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:26,083 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 01:37:26,084 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 01:37:27,146 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 01:37:27,148 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-28 01:37:28,699 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:42,700 [INFO] visa_bot: Browser started
+2026-06-28 01:37:42,701 [INFO] visa_bot: Logging in as: kishore.rajdeep.shuvo.204111
+2026-06-28 01:37:42,724 [INFO] visa_bot: ♻️ Session loaded for kishore.rajdeep.shuvo.204111
+2026-06-28 01:37:42,725 [INFO] visa_bot: Trying saved session — checking if still valid...
+2026-06-28 01:37:46,665 [INFO] visa_bot: Session check failed: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.usvisascheduling.com/en-US/", waiting until "domcontentloaded"
+ — deleting session, full login
+2026-06-28 01:37:46,674 [INFO] visa_bot: 🗑️ Deleted expired session for kishore.rajdeep.shuvo.204111
+2026-06-28 01:37:46,750 [ERROR] visa_bot: Cannot reach portal: Page.goto: Target page, context or browser has been closed
+2026-06-28 01:37:46,751 [ERROR] visa_bot: prepare_calendar_page: login failed
+2026-06-28 01:37:46,751 [INFO] visa_bot: [kishore.rajdeep.shuvo.204111] Could not prepare calendar — retrying
+2026-06-28 01:37:48,168 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 01:37:48,221 [INFO] visa_bot: Browser stopped
+2026-06-28 13:33:57,838 [INFO] visa_bot: =======================================================
+2026-06-28 13:33:57,838 [INFO] visa_bot:    VISA APPOINTMENT BOT — Starting
+2026-06-28 13:33:57,840 [INFO] visa_bot: =======================================================
+2026-06-28 13:33:57,850 [INFO] visa_bot: Database ready ✓
+2026-06-28 13:34:00,411 [INFO] visa_bot: Telegram bot started ✓
+2026-06-28 13:34:00,411 [INFO] visa_bot: Testing Telegram connection...
+2026-06-28 13:34:00,411 [INFO] visa_bot: Testing Telegram connection...
+2026-06-28 13:34:01,846 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:01,867 [INFO] visa_bot: ✅ Telegram connection test passed!
+2026-06-28 13:34:01,870 [INFO] visa_bot: Existing config found — resuming
+2026-06-28 13:34:03,339 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:03,352 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-26 → 2026-07-31
+2026-06-28 13:34:03,353 [INFO] visa_bot: Bot running. Press Ctrl+C to stop.
+2026-06-28 13:34:03,356 [INFO] visa_bot: 🗑️ Cleared 1 saved session(s)
+2026-06-28 13:34:03,380 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-26 → 2026-07-31
+2026-06-28 13:34:03,385 [INFO] visa_bot: Scan mode: every minute
+2026-06-28 13:34:04,839 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:15,809 [INFO] visa_bot: Browser started
+2026-06-28 13:34:15,822 [INFO] visa_bot: Logging in as: kishore.rajdeep.shuvo.204111
+2026-06-28 13:34:15,986 [INFO] visa_bot: Browser started
+2026-06-28 13:34:15,986 [INFO] visa_bot: Logging in as: halimahossain6666
+2026-06-28 13:34:16,487 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:34:18,032 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:34:18,033 [INFO] visa_bot: Waiting for login page... 1s elapsed
+2026-06-28 13:34:18,220 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:34:18,221 [INFO] visa_bot: CF iframe not found yet
+2026-06-28 13:34:18,244 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:34:20,275 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:34:20,277 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:34:20,355 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:34:21,123 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:34:21,124 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:34:21,164 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:34:21,266 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:34:21,879 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:34:22,661 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:23,238 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:26,721 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:34:27,288 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:34:28,739 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:34:28,739 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:34:28,750 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:34:29,304 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:34:29,317 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:34:29,317 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:34:29,326 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:34:29,886 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:34:30,740 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:31,342 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:34,779 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 13:34:34,784 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:34:34,784 [INFO] visa_bot: Waiting for login page... 18s elapsed
+2026-06-28 13:34:35,394 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 13:34:35,399 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:34:37,847 [INFO] visa_bot: Login form detected
+2026-06-28 13:34:38,416 [INFO] visa_bot: Login form detected
+2026-06-28 13:34:38,560 [INFO] visa_bot: Username filled
+2026-06-28 13:34:38,928 [INFO] visa_bot: Password filled
+2026-06-28 13:34:39,196 [INFO] visa_bot: Username filled
+2026-06-28 13:34:39,294 [INFO] visa_bot: Login submitted
+2026-06-28 13:34:39,339 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:34:39,344 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:34:39,588 [INFO] visa_bot: Password filled
+2026-06-28 13:34:39,849 [INFO] visa_bot: Login submitted
+2026-06-28 13:34:39,864 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:34:39,871 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:34:41,759 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 13:34:42,730 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 13:34:42,778 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 13:34:42,778 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-28 13:34:42,831 [INFO] visa_bot: Filled #kba1_response
+2026-06-28 13:34:42,831 [INFO] visa_bot: Security question: What high school did you attend? | matched keyword: school
+2026-06-28 13:34:42,864 [INFO] visa_bot: Filled #kba2_response
+2026-06-28 13:34:43,290 [INFO] visa_bot: Security questions submitted
+2026-06-28 13:34:43,743 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 13:34:43,744 [INFO] visa_bot: Security question: What high school did you attend? | matched keyword: school
+2026-06-28 13:34:43,779 [INFO] visa_bot: Filled #kba2_response
+2026-06-28 13:34:43,779 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-28 13:34:43,796 [INFO] visa_bot: Filled #kba3_response
+2026-06-28 13:34:44,271 [INFO] visa_bot: Security questions submitted
+2026-06-28 13:34:50,221 [INFO] visa_bot: Login successful — portal content detected
+2026-06-28 13:34:51,579 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:52,049 [INFO] visa_bot: Login successful — portal content detected
+2026-06-28 13:34:52,275 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 13:34:52,290 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 13:34:52,300 [INFO] visa_bot: 💾 Session saved for kishore.rajdeep.shuvo.204111
+2026-06-28 13:34:53,775 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:54,012 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:54,377 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 13:34:54,392 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 13:34:54,400 [INFO] visa_bot: 💾 Session saved for halimahossain6666
+2026-06-28 13:34:55,364 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:55,365 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 13:34:55,879 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:56,461 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:34:56,477 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:34:57,301 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:34:57,302 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 13:34:57,876 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 13:34:58,368 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:34:58,387 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:34:58,812 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 13:34:59,573 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 13:35:00,242 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:35:00,278 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:35:00,283 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:35:00,522 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 13:35:01,934 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:35:01,954 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:35:01,959 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:35:02,825 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 13:35:03,678 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 13:35:04,199 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:35:04,908 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:35:04,908 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:35:05,099 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:35:05,923 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 13:35:05,923 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-28 13:35:06,074 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:35:06,074 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:35:07,093 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 13:35:07,093 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-28 13:35:07,366 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:35:08,420 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:35:24,714 [INFO] visa_bot: Browser stopped
+2026-06-28 13:35:24,714 [INFO] visa_bot: Browser stopped
+2026-06-28 13:35:24,954 [INFO] visa_bot: Browser stopped
+2026-06-28 13:35:24,954 [INFO] visa_bot: Scan aborted by command
+2026-06-28 13:35:24,956 [INFO] visa_bot: Browser stopped
+2026-06-28 13:35:26,373 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:35:26,374 [INFO] visa_bot: Realtime loop ended — waiting for /resume or /scan.
+2026-06-28 13:38:55,379 [INFO] visa_bot: Account #30 saved: halimahossain6666
+2026-06-28 13:38:55,386 [INFO] visa_bot: Account #31 saved: Amran_Mojumder_Fahad
+2026-06-28 13:38:55,850 [INFO] visa_bot: 🗑️ Cleared 2 saved session(s)
+2026-06-28 13:38:55,873 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-28 → 2026-07-01
+2026-06-28 13:38:55,879 [INFO] visa_bot: Scan mode: every minute
+2026-06-28 13:38:57,314 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:38:58,436 [INFO] visa_bot: Browser started
+2026-06-28 13:38:58,437 [INFO] visa_bot: Logging in as: halimahossain6666
+2026-06-28 13:38:58,856 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:38:58,864 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:38:58,864 [INFO] visa_bot: Waiting for login page... 0s elapsed
+2026-06-28 13:39:01,942 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:39:01,942 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:39:01,967 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:39:02,771 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:39:04,112 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:06,641 [INFO] visa_bot: Browser started
+2026-06-28 13:39:06,648 [INFO] visa_bot: Logging in as: Amran_Mojumder_Fahad
+2026-06-28 13:39:07,483 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:39:07,489 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:07,490 [INFO] visa_bot: Waiting for login page... 0s elapsed
+2026-06-28 13:39:08,150 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 13:39:08,156 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:10,578 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:39:10,579 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:39:10,625 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:39:11,174 [INFO] visa_bot: Login form detected
+2026-06-28 13:39:11,400 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:39:11,847 [INFO] visa_bot: Username filled
+2026-06-28 13:39:12,174 [INFO] visa_bot: Password filled
+2026-06-28 13:39:12,480 [INFO] visa_bot: Login submitted
+2026-06-28 13:39:12,493 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:12,500 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:12,840 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:15,434 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 13:39:16,459 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 13:39:16,460 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-28 13:39:16,493 [INFO] visa_bot: Filled #kba1_response
+2026-06-28 13:39:16,494 [INFO] visa_bot: Security question: What high school did you attend? | matched keyword: school
+2026-06-28 13:39:16,514 [INFO] visa_bot: Filled #kba2_response
+2026-06-28 13:39:16,874 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:39:17,072 [INFO] visa_bot: Security questions submitted
+2026-06-28 13:39:18,893 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:39:18,893 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:39:18,901 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:39:19,440 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:39:20,826 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:24,633 [INFO] visa_bot: Login successful — portal content detected
+2026-06-28 13:39:24,882 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 13:39:24,887 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:26,354 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:27,009 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 13:39:27,033 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 13:39:27,039 [INFO] visa_bot: 💾 Session saved for halimahossain6666
+2026-06-28 13:39:27,899 [INFO] visa_bot: Login form detected
+2026-06-28 13:39:28,468 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:28,666 [INFO] visa_bot: Username filled
+2026-06-28 13:39:28,910 [INFO] visa_bot: Password filled
+2026-06-28 13:39:29,360 [INFO] visa_bot: Login submitted
+2026-06-28 13:39:29,372 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:29,378 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:29,850 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:29,851 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 13:39:31,282 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:39:31,301 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:32,221 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 13:39:32,607 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 13:39:33,234 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 13:39:33,234 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-28 13:39:33,271 [INFO] visa_bot: Filled #kba1_response
+2026-06-28 13:39:33,272 [INFO] visa_bot: Security question: What is your favorite food? | matched keyword: food
+2026-06-28 13:39:33,303 [INFO] visa_bot: Filled #kba2_response
+2026-06-28 13:39:33,713 [INFO] visa_bot: Security questions submitted
+2026-06-28 13:39:33,855 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 13:39:35,200 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:35,225 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:39:35,231 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:37,178 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 13:39:38,600 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:39,399 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:39:39,399 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:39:40,317 [INFO] visa_bot: Login successful — portal content detected
+2026-06-28 13:39:40,413 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 13:39:40,414 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-28 13:39:41,690 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:42,202 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:42,273 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 13:39:42,292 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 13:39:42,299 [INFO] visa_bot: 💾 Session saved for Amran_Mojumder_Fahad
+2026-06-28 13:39:43,711 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:45,358 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:45,360 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 13:39:46,554 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:39:46,574 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:47,666 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 13:39:49,555 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 13:39:51,436 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:51,455 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:39:51,460 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:39:53,107 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 13:39:55,090 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:39:56,002 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:39:56,002 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:40:00,833 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:01,810 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:40:01,811 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:40:02,356 [INFO] visa_bot: Browser stopped
+2026-06-28 13:40:02,830 [INFO] visa_bot: Browser stopped
+2026-06-28 13:40:02,857 [INFO] visa_bot: Browser stopped
+2026-06-28 13:40:02,857 [INFO] visa_bot: Scan aborted by command
+2026-06-28 13:40:03,193 [INFO] visa_bot: Browser stopped
+2026-06-28 13:40:04,758 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:04,759 [INFO] visa_bot: Realtime loop ended — waiting for /resume or /scan.
+2026-06-28 13:40:06,725 [INFO] visa_bot: 🗑️ Cleared 2 saved session(s)
+2026-06-28 13:40:07,643 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-28 → 2026-07-01
+2026-06-28 13:40:07,648 [INFO] visa_bot: Scan minutes: [42, 43, 46, 48, 55] (each hour)
+2026-06-28 13:40:09,042 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:10,841 [INFO] visa_bot: Browser started
+2026-06-28 13:40:10,844 [INFO] visa_bot: Logging in as: halimahossain6666
+2026-06-28 13:40:11,366 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:40:13,210 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:40:13,211 [INFO] visa_bot: Waiting for login page... 1s elapsed
+2026-06-28 13:40:16,316 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:40:16,317 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:40:16,360 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:40:17,215 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:40:18,749 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:19,320 [INFO] visa_bot: Browser started
+2026-06-28 13:40:19,321 [INFO] visa_bot: Logging in as: Amran_Mojumder_Fahad
+2026-06-28 13:40:20,144 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:40:20,156 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:40:20,157 [INFO] visa_bot: Waiting for login page... 0s elapsed
+2026-06-28 13:40:22,828 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:40:23,341 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:40:23,343 [INFO] visa_bot: CF iframe not found yet
+2026-06-28 13:40:23,373 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:40:24,856 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:40:24,857 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:40:24,875 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:40:25,410 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:40:25,413 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:40:25,429 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:40:25,474 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:40:26,360 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:40:27,082 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:27,904 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:31,670 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 13:40:31,684 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:40:31,982 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:40:34,012 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:40:34,013 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:40:34,028 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:40:34,576 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:40:34,737 [INFO] visa_bot: Login form detected
+2026-06-28 13:40:35,635 [INFO] visa_bot: Username filled
+2026-06-28 13:40:35,967 [INFO] visa_bot: Password filled
+2026-06-28 13:40:36,099 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:36,973 [INFO] visa_bot: Login submitted
+2026-06-28 13:40:37,007 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:40:37,023 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:40:39,669 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 13:40:40,172 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 13:40:40,183 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:40:40,702 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: TypeError: Cannot read properties of null (reading 'innerText')
+    at eval (eval at evaluate (:302:30), <anonymous>:15:50)
+    at UtilityScript.evaluate (<anonymous>:309:18)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2026-06-28 13:40:41,722 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 13:40:41,722 [INFO] visa_bot: Security question: What high school did you attend? | matched keyword: school
+2026-06-28 13:40:41,790 [INFO] visa_bot: Filled #kba2_response
+2026-06-28 13:40:41,794 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-28 13:40:41,834 [INFO] visa_bot: Filled #kba3_response
+2026-06-28 13:40:42,279 [INFO] visa_bot: Security questions submitted
+2026-06-28 13:40:43,197 [INFO] visa_bot: Login form detected
+2026-06-28 13:40:44,202 [INFO] visa_bot: Username filled
+2026-06-28 13:40:44,435 [INFO] visa_bot: Password filled
+2026-06-28 13:40:44,908 [INFO] visa_bot: Login submitted
+2026-06-28 13:40:44,981 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:40:44,999 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:40:46,635 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 13:40:47,675 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 13:40:47,679 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-28 13:40:47,781 [INFO] visa_bot: Filled #kba1_response
+2026-06-28 13:40:47,781 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-28 13:40:47,822 [INFO] visa_bot: Filled #kba3_response
+2026-06-28 13:40:48,480 [INFO] visa_bot: Security questions submitted
+2026-06-28 13:40:49,182 [INFO] visa_bot: Returned to US Visa Scheduling portal
+2026-06-28 13:40:50,579 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:51,215 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 13:40:51,291 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 13:40:51,330 [INFO] visa_bot: 💾 Session saved for halimahossain6666
+2026-06-28 13:40:52,783 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:54,334 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:54,338 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 13:40:55,761 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:40:55,780 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:40:56,853 [INFO] visa_bot: Login successful — portal content detected
+2026-06-28 13:40:56,855 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 13:40:57,909 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 13:40:58,220 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:59,092 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 13:40:59,136 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 13:40:59,161 [INFO] visa_bot: 💾 Session saved for Amran_Mojumder_Fahad
+2026-06-28 13:40:59,288 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:40:59,353 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:40:59,372 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:41:00,543 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:41:01,107 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 13:41:02,050 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:41:02,052 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 13:41:02,560 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:41:03,474 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:41:03,475 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:41:03,701 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:41:03,730 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:41:04,507 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 13:41:04,508 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-28 13:41:05,272 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 13:41:05,977 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:41:06,510 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 13:41:08,030 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:41:08,063 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:41:08,072 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:41:10,286 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 13:41:11,879 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:41:12,897 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:41:12,897 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:41:44,536 [WARNING] visa_bot: Calendar load timeout
+2026-06-28 13:41:44,537 [ERROR] visa_bot: prepare_calendar_page: calendar did not load
+2026-06-28 13:41:44,538 [INFO] visa_bot: [Amran_Mojumder_Fahad] Calendar not ready yet — keeping browser open, retrying each minute
+2026-06-28 13:41:47,200 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:42:01,022 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:42:01,690 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:42:01,690 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:42:02,259 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:42:03,019 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:42:03,020 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:42:04,043 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 13:42:04,044 [INFO] visa_bot: Filtering dates to range: 2026-06-28 → 2026-07-01
+2026-06-28 13:42:04,055 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-28 13:42:06,880 [INFO] visa_bot: Found 5 dates after scrolling 2 months!
+2026-06-28 13:42:06,959 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-28 13:42:06,994 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-28 13:42:07,029 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-28 13:42:07,069 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-28 13:42:07,109 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-28 13:42:07,110 [INFO] visa_bot: Total available dates: 0
+2026-06-28 13:42:07,111 [INFO] visa_bot: No available dates this minute
+2026-06-28 13:42:07,127 [INFO] visa_bot: [halimahossain6666] [13:42:07] No slots this minute
+2026-06-28 13:42:08,710 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:42:33,339 [WARNING] visa_bot: Calendar load timeout
+2026-06-28 13:42:33,340 [INFO] visa_bot: Calendar not available this minute — staying on page, will retry next minute
+2026-06-28 13:42:33,341 [INFO] visa_bot: [Amran_Mojumder_Fahad] [13:42:33] Calendar not available — browser stays open, retrying
+2026-06-28 13:42:34,806 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:43:10,942 [ERROR] visa_bot: ❌ Telegram send error: 
+2026-06-28 13:43:11,736 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:43:11,737 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:43:12,791 [INFO] visa_bot: Calendar loading... (0s)
+2026-06-28 13:43:12,948 [ERROR] visa_bot: ❌ Telegram send error: 
+2026-06-28 13:43:13,586 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:43:13,586 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:43:13,844 [INFO] visa_bot: Calendar loading... (1s)
+2026-06-28 13:43:14,653 [INFO] visa_bot: Calendar loading... (0s)
+2026-06-28 13:43:14,900 [INFO] visa_bot: Calendar loading... (2s)
+2026-06-28 13:43:15,702 [INFO] visa_bot: Calendar loading... (1s)
+2026-06-28 13:43:15,956 [INFO] visa_bot: Calendar loading... (3s)
+2026-06-28 13:43:16,724 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 13:43:16,725 [INFO] visa_bot: Filtering dates to range: 2026-06-28 → 2026-07-01
+2026-06-28 13:43:16,735 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-28 13:43:17,006 [INFO] visa_bot: Calendar loading... (4s)
+2026-06-28 13:43:19,728 [INFO] visa_bot: Found 5 dates after scrolling 2 months!
+2026-06-28 13:43:19,766 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-28 13:43:19,808 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-28 13:43:19,847 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-28 13:43:19,887 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-28 13:43:19,928 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-28 13:43:19,929 [INFO] visa_bot: Total available dates: 0
+2026-06-28 13:43:19,930 [INFO] visa_bot: No available dates this minute
+2026-06-28 13:43:19,945 [INFO] visa_bot: [halimahossain6666] [13:43:19] No slots this minute
+2026-06-28 13:43:22,595 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:43:43,308 [WARNING] visa_bot: Calendar load timeout
+2026-06-28 13:43:43,309 [INFO] visa_bot: Calendar not available this minute — staying on page, will retry next minute
+2026-06-28 13:43:43,310 [INFO] visa_bot: [Amran_Mojumder_Fahad] [13:43:43] Calendar not available — browser stays open, retrying
+2026-06-28 13:43:44,864 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:44:49,714 [INFO] visa_bot: Browser stopped
+2026-06-28 13:44:49,854 [INFO] visa_bot: Browser stopped
+2026-06-28 13:44:49,855 [INFO] visa_bot: Browser stopped
+2026-06-28 13:44:49,859 [INFO] visa_bot: Browser stopped
+2026-06-28 13:44:49,860 [INFO] visa_bot: Scan aborted by command
+2026-06-28 13:44:50,786 [INFO] visa_bot: 🗑️ Cleared 2 saved session(s)
+2026-06-28 13:44:51,424 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:44:51,428 [INFO] visa_bot: Realtime loop ended — waiting for /resume or /scan.
+2026-06-28 13:44:52,123 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-28 → 2026-07-01
+2026-06-28 13:44:52,141 [INFO] visa_bot: Scan mode: every minute
+2026-06-28 13:44:53,676 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:44:55,542 [INFO] visa_bot: Browser started
+2026-06-28 13:44:55,543 [INFO] visa_bot: Logging in as: halimahossain6666
+2026-06-28 13:44:56,172 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:44:56,182 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:44:56,183 [INFO] visa_bot: Waiting for login page... 0s elapsed
+2026-06-28 13:44:59,316 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:44:59,317 [INFO] visa_bot: CF iframe not found yet
+2026-06-28 13:44:59,337 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:45:01,376 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:45:01,377 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:45:01,424 [INFO] visa_bot: CF iframe has no bounding box yet — will retry
+2026-06-28 13:45:02,445 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:45:04,171 [INFO] visa_bot: Browser started
+2026-06-28 13:45:04,174 [INFO] visa_bot: Logging in as: Amran_Mojumder_Fahad
+2026-06-28 13:45:04,493 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:45:04,498 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:45:04,523 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:45:05,450 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:45:06,789 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:45:06,790 [INFO] visa_bot: CF iframe not found yet
+2026-06-28 13:45:06,812 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:45:06,876 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:08,844 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:45:08,845 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:45:08,905 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:45:09,667 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:45:10,933 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:45:11,432 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:13,010 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:45:13,012 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:45:13,043 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:45:13,637 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:45:15,523 [INFO] visa_bot: Retrying in 2s...
+2026-06-28 13:45:17,559 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-28 13:45:17,559 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-28 13:45:17,575 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-28 13:45:18,149 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-28 13:45:19,840 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:23,541 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:23,886 [INFO] visa_bot: ✅ CF cleared — no challenge signs!
+2026-06-28 13:45:23,899 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:45:30,457 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:45:30,466 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:45:30,467 [INFO] visa_bot: Waiting for login page... 34s elapsed
+2026-06-28 13:45:30,530 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-28 13:45:30,548 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:45:30,551 [INFO] visa_bot: Waiting for login page... 25s elapsed
+2026-06-28 13:45:33,484 [INFO] visa_bot: Login form detected
+2026-06-28 13:45:33,576 [INFO] visa_bot: Login form detected
+2026-06-28 13:45:34,585 [INFO] visa_bot: Username filled
+2026-06-28 13:45:34,675 [INFO] visa_bot: Username filled
+2026-06-28 13:45:34,925 [INFO] visa_bot: Password filled
+2026-06-28 13:45:34,992 [INFO] visa_bot: Password filled
+2026-06-28 13:45:35,300 [INFO] visa_bot: Login submitted
+2026-06-28 13:45:35,324 [INFO] visa_bot: Login submitted
+2026-06-28 13:45:35,353 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:45:35,360 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:45:35,366 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:45:35,376 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:45:37,870 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 13:45:37,902 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-28 13:45:38,893 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 13:45:38,894 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-28 13:45:38,926 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-28 13:45:38,926 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-28 13:45:38,999 [INFO] visa_bot: Filled #kba1_response
+2026-06-28 13:45:39,003 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-28 13:45:39,030 [INFO] visa_bot: Filled #kba1_response
+2026-06-28 13:45:39,033 [INFO] visa_bot: Security question: What is your favorite food? | matched keyword: food
+2026-06-28 13:45:39,058 [INFO] visa_bot: Filled #kba3_response
+2026-06-28 13:45:39,099 [INFO] visa_bot: Filled #kba2_response
+2026-06-28 13:45:39,549 [INFO] visa_bot: Security questions submitted
+2026-06-28 13:45:39,629 [INFO] visa_bot: Security questions submitted
+2026-06-28 13:45:46,964 [INFO] visa_bot: Login successful — portal content detected
+2026-06-28 13:45:47,063 [INFO] visa_bot: Login successful — portal content detected
+2026-06-28 13:45:51,525 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:52,215 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:52,372 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 13:45:52,407 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 13:45:52,426 [INFO] visa_bot: 💾 Session saved for Amran_Mojumder_Fahad
+2026-06-28 13:45:53,077 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-28 13:45:53,358 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-28 13:45:53,371 [INFO] visa_bot: 💾 Session saved for halimahossain6666
+2026-06-28 13:45:53,923 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:54,812 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:55,494 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:55,498 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 13:45:57,121 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:45:57,160 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:45:58,281 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 13:45:59,589 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:45:59,593 [INFO] visa_bot: Navigating to homepage...
+2026-06-28 13:46:00,696 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 13:46:01,162 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:46:01,202 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:46:02,157 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:46:02,261 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:46:02,293 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:46:02,648 [INFO] visa_bot: Detecting schedule type...
+2026-06-28 13:46:04,022 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-28 13:46:04,494 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 13:46:05,969 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:46:06,010 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-28 13:46:06,020 [INFO] visa_bot: ✅ Past waiting room
+2026-06-28 13:46:06,045 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:46:06,684 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:46:06,685 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:46:08,422 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-28 13:46:09,963 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:46:10,568 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:46:10,569 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:46:11,589 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 13:46:11,589 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-28 13:46:13,156 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:46:38,303 [WARNING] visa_bot: Calendar load timeout
+2026-06-28 13:46:38,304 [ERROR] visa_bot: prepare_calendar_page: calendar did not load
+2026-06-28 13:46:38,304 [INFO] visa_bot: [Amran_Mojumder_Fahad] Calendar not ready yet — keeping browser open, retrying each minute
+2026-06-28 13:46:39,686 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:47:01,574 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:47:02,009 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:47:02,470 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:47:02,471 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:47:03,076 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-28 13:47:03,077 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-28 13:47:04,101 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-28 13:47:04,102 [INFO] visa_bot: Filtering dates to range: 2026-06-28 → 2026-07-01
+2026-06-28 13:47:04,113 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-28 13:47:06,757 [INFO] visa_bot: Found 5 dates after scrolling 2 months!
+2026-06-28 13:47:06,795 [INFO] visa_bot: ⏭ Skipping 2026-09-16 — outside configured range
+2026-06-28 13:47:06,836 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-28 13:47:06,873 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-28 13:47:06,911 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-28 13:47:06,947 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-28 13:47:06,947 [INFO] visa_bot: Total available dates: 0
+2026-06-28 13:47:06,948 [INFO] visa_bot: No available dates this minute
+2026-06-28 13:47:06,979 [INFO] visa_bot: [halimahossain6666] [13:47:06] No slots this minute
+2026-06-28 13:47:08,535 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:47:34,016 [WARNING] visa_bot: Calendar load timeout
+2026-06-28 13:47:34,040 [INFO] visa_bot: Calendar not available this minute — staying on page, will retry next minute
+2026-06-28 13:47:34,056 [INFO] visa_bot: [Amran_Mojumder_Fahad] [13:47:34] Calendar not available — browser stays open, retrying
+2026-06-28 13:47:35,524 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:47:43,981 [INFO] visa_bot: Stopping...
+2026-06-28 13:47:44,047 [INFO] visa_bot: Browser stopped
+2026-06-28 13:47:44,060 [INFO] visa_bot: Browser stopped
+2026-06-28 13:47:44,590 [INFO] visa_bot: Browser stopped
+2026-06-28 13:47:44,590 [INFO] visa_bot: Scan aborted by command
+2026-06-28 13:47:46,219 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:47:48,675 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-28 13:47:48,677 [INFO] visa_bot: Done.

@@ -49,6 +49,7 @@ class VisaAgent:
         self._scanning        = False
         self._current_scraper: VisaScraper | None = None
         self._scrapers: list = []   # all scrapers running in parallel (realtime)
+        self._scan_minutes    = None   # None = every minute; set = only these minutes each hour
         self.scan_count       = 0
         self._last_session_clear = 0.0   # timestamp of last 30-min session wipe
 
@@ -155,6 +156,28 @@ class VisaAgent:
             sleep_for += 60.0
         return sleep_for
 
+    async def _seconds_until_next_scan(self, lead_seconds: float = 3.0) -> float:
+        """If specific scan minutes are set (e.g. {10,11,12}), wait until the
+        next time the clock's minute is one of them — lead_seconds before its
+        :00. Otherwise fall back to every-minute mode."""
+        from datetime import timedelta
+        target_minutes = self._scan_minutes
+        now = datetime.now()
+
+        if not target_minutes:
+            return await self._seconds_until_next_minute(lead_seconds)
+
+        base = now.replace(second=0, microsecond=0)
+        for i in range(1, 24 * 60 + 1):   # search up to 24h ahead
+            candidate = base + timedelta(minutes=i)
+            if candidate.minute in target_minutes:
+                target = candidate - timedelta(seconds=lead_seconds)
+                delta = (target - now).total_seconds()
+                if delta < 0:
+                    continue
+                return delta
+        return 60.0
+
     async def _abortable_sleep(self, seconds: float):
         """Sleep that wakes immediately on /stop."""
         slept = 0.0
@@ -231,28 +254,22 @@ class VisaAgent:
                         log.error(f"[{name}] prepare_calendar_page raised: {e}")
 
                     if not ready:
-                        log.info(f"[{name}] Could not prepare calendar — retrying")
+                        # Login worked but calendar/schedule didn't load yet.
+                        # DON'T close the browser — keep it open and let the
+                        # per-minute reload loop keep trying on the same page.
+                        # Only a truly dead session closes+re-logs in (below).
+                        log.info(f"[{name}] Calendar not ready yet — keeping browser open, retrying each minute")
                         await notifier.send_telegram(
-                            f"⚠️ Login/calendar setup failed for <b>{name}</b> — retrying."
+                            f"📭 <b>{name}</b> — calendar not ready yet, browser staying open, retrying every minute."
                         )
-                        try:
-                            await scraper.stop()
-                        except Exception:
-                            pass
-                        try:
-                            self._scrapers.remove(scraper)
-                        except ValueError:
-                            pass
-                        scraper = None
-                        await self._abortable_sleep(15)
-                        continue
+                    else:
+                        await notifier.send_telegram(
+                            f"✅ <b>{name}</b> logged in. Watching calendar every minute."
+                        )
 
-                    await notifier.send_telegram(
-                        f"✅ <b>{name}</b> logged in. Watching calendar every minute."
-                    )
-
-                # Sleep until ~3s before the next minute boundary
-                sleep_for = await self._seconds_until_next_minute(lead_seconds=3.0)
+                # Sleep until ~3s before the next scan time (every minute, OR
+                # only the custom minutes if /setminutes was used)
+                sleep_for = await self._seconds_until_next_scan(lead_seconds=3.0)
                 await self._abortable_sleep(sleep_for)
                 if self._abort_scan.is_set() or self._stop_event.is_set():
                     break
@@ -270,7 +287,8 @@ class VisaAgent:
                 now_str = datetime.now().strftime("%H:%M:%S")
 
                 if status == "need_relogin":
-                    log.info(f"[{name}] Session/page broke — re-login")
+                    # ONLY here — session actually died (login form seen).
+                    log.info(f"[{name}] Session died — closing browser, re-login")
                     await notifier.send_telegram(
                         f"♻️ Session ended for <b>{name}</b> — logging in again."
                     )
@@ -283,6 +301,15 @@ class VisaAgent:
                     except ValueError:
                         pass
                     scraper = None
+                    continue
+
+                if status == "no_calendar":
+                    # Calendar/schedule didn't load this minute, but session is
+                    # alive. Browser STAYS OPEN — report and retry next minute.
+                    log.info(f"[{name}] [{now_str}] Calendar not available — browser stays open, retrying")
+                    await notifier.send_telegram(
+                        f"📭 [{now_str}] Calendar not available — <b>{name}</b> (browser open, will retry)"
+                    )
                     continue
 
                 await log_scan("found" if slots else "empty", slots_found=len(slots))
@@ -359,6 +386,22 @@ class VisaAgent:
         self._scanning = True
         self._abort_scan.clear()
         self._scrapers = []   # all parallel scrapers, for /stop
+
+        # Load custom scan minutes from DB (None = every minute)
+        raw_minutes = await get_config("scan_minutes")
+        if raw_minutes:
+            try:
+                self._scan_minutes = {int(x) for x in raw_minutes.split(",") if x.strip().isdigit()}
+                if not self._scan_minutes:
+                    self._scan_minutes = None
+            except Exception:
+                self._scan_minutes = None
+        else:
+            self._scan_minutes = None
+        if self._scan_minutes:
+            log.info(f"Scan minutes: {sorted(self._scan_minutes)} (each hour)")
+        else:
+            log.info("Scan mode: every minute")
 
         await notifier.send_telegram(
             f"⏱ <b>Real-time mode started</b>\n"

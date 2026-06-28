@@ -1644,12 +1644,12 @@ class VisaScraper:
             if not on_schedule:
                 log.info("Not on schedule page after reload — trying to navigate back")
                 if not await self._navigate_to_schedule_page():
-                    log.info("Could not get back to schedule page — will re-login")
-                    return ("need_relogin", slots)
+                    log.info("Could not reach schedule page — staying on page, will retry next minute")
+                    return ("no_calendar", slots)
 
             if not await self._select_post_and_load_calendar():
-                log.info("Calendar did not load after reload — will re-login")
-                return ("need_relogin", slots)
+                log.info("Calendar not available this minute — staying on page, will retry next minute")
+                return ("no_calendar", slots)
 
             available_dates = await self._read_calendar_dates()
             if not available_dates:

@@ -69,7 +69,7 @@ from core.logger import log
 
 DEFAULT_PORTAL = "https://www.usvisascheduling.com/"
 # Only this Telegram group can use the bot (your team's private group)
-ALLOWED_CHAT_ID = -1003909347182
+ALLOWED_CHAT_ID = -5547708084
 
 booking_decisions: dict[int, asyncio.Future] = {}
 agent_ref = None
@@ -286,6 +286,58 @@ class TelegramBot:
         await update.message.reply_text("🔍 Starting scan now...")
         if agent_ref:
             agent_ref.trigger_scan_now()
+
+    async def cmd_setminutes(self, update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+        """Set which minutes of each hour to scan.
+          /setminutes 10 11 12   → scan at :10, :11, :12 every hour
+          /setminutes every      → scan every minute (default)
+        Takes effect after /stop then /resume (or restart)."""
+        text = (update.message.text or "").strip()
+        parts = text.split()[1:]   # drop the command itself
+
+        if not parts:
+            current = await get_config("scan_minutes")
+            mode = f"minutes {current} each hour" if current else "every minute"
+            await update.message.reply_text(
+                "⏱ <b>Scan timing</b>\n\n"
+                f"Current: <b>{mode}</b>\n\n"
+                "Set specific minutes (each hour):\n"
+                "<code>/setminutes 10 11 12</code>\n\n"
+                "Or scan every minute:\n"
+                "<code>/setminutes every</code>\n\n"
+                "After changing, send /stop then /resume to apply.",
+                parse_mode=ParseMode.HTML,
+            )
+            return
+
+        if parts[0].lower() == "every":
+            await set_config("scan_minutes", "")
+            await update.message.reply_text(
+                "✅ Scan mode: <b>every minute</b>.\n"
+                "Send /stop then /resume to apply.",
+                parse_mode=ParseMode.HTML,
+            )
+            return
+
+        minutes = []
+        for p in parts:
+            if p.isdigit() and 0 <= int(p) <= 59:
+                minutes.append(int(p))
+        if not minutes:
+            await update.message.reply_text(
+                "⚠️ Give minutes between 0 and 59, e.g. <code>/setminutes 10 11 12</code>",
+                parse_mode=ParseMode.HTML,
+            )
+            return
+
+        minutes = sorted(set(minutes))
+        await set_config("scan_minutes", ",".join(str(m) for m in minutes))
+        await update.message.reply_text(
+            f"✅ Scan minutes set: <b>{minutes}</b> each hour.\n"
+            f"(e.g. {minutes[0]:02d}, {minutes[-1]:02d} past every hour)\n\n"
+            "Send /stop then /resume to apply.",
+            parse_mode=ParseMode.HTML,
+        )
 
     # ── /cancel ─────────────────────────────────────────────────────────── #
 
@@ -855,6 +907,7 @@ class TelegramBot:
         self.app.add_handler(CommandHandler("resume",        self.cmd_resume))
         self.app.add_handler(CommandHandler("accounts",      self.cmd_accounts))
         self.app.add_handler(CommandHandler("removeaccount", self.cmd_removeaccount))
+        self.app.add_handler(CommandHandler("setminutes",    self.cmd_setminutes))
         self.app.add_handler(setup_conv)
         self.app.add_handler(addaccount_conv)
         # Button handlers (outside conversations)
@@ -872,6 +925,7 @@ class TelegramBot:
             BotCommand("accounts",      "List / delete accounts"),
             BotCommand("addaccount",    "Add a new account"),
             BotCommand("setup",         "Full setup wizard"),
+            BotCommand("setminutes",    "Set scan minutes (e.g. 10 11 12)"),
             BotCommand("start",         "Welcome & menu"),
             BotCommand("cancel",        "Cancel current wizard"),
         ])
