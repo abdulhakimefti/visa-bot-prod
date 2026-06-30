@@ -216,6 +216,24 @@ class VisaScraper:
             await asyncio.sleep(min(step, total - slept))
             slept += step
 
+    async def _human_glance(self):
+        """A few small, human-like mouse moves and a scroll, as if a person is
+        glancing over the page after it loaded. Purely cosmetic behaviour to
+        look less robotic. Never raises."""
+        try:
+            for _ in range(random.randint(1, 3)):
+                self._check_abort()
+                await self._page.mouse.move(
+                    random.randint(200, 900), random.randint(150, 600)
+                )
+                await asyncio.sleep(random.uniform(0.2, 0.6))
+            await self._page.mouse.wheel(0, random.randint(100, 400))
+            await asyncio.sleep(random.uniform(0.3, 0.8))
+        except ScanAborted:
+            raise
+        except Exception:
+            pass
+
     async def _visible_any(self, selectors: list[str], timeout=1000) -> bool:
         for selector in selectors:
             try:
@@ -1613,7 +1631,12 @@ class VisaScraper:
                 log.warning(f"Reload failed: {e} — will re-login")
                 return ("need_relogin", slots)
 
-            await self._sleep(0.5, 1.0)
+            # Human-like pause after the page loads — a person doesn't act the
+            # instant a page appears; they look at it for a couple of seconds.
+            await self._sleep(2.0, 4.0)
+
+            # A few small mouse moves + a scroll, like glancing over the page
+            await self._human_glance()
 
             try:
                 body_peek = (await self._page.inner_text("body")).lower()

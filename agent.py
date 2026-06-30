@@ -144,18 +144,26 @@ class VisaAgent:
     # ------------------------------------------------------------------ #
     #  REAL-TIME single-account mode
     # ------------------------------------------------------------------ #
-
+    # last changes 1!
     async def _seconds_until_next_minute(self, lead_seconds: float = 6.0) -> float:
-        """Sleep length so we wake `lead_seconds` before the next :00 boundary
-        (so the calendar read lands right on the new minute)."""
+        """Wake at a RANDOM moment near the next :00 instead of a fixed point,
+        so reloads don't land on a robotic exact second. With the range below
+        the reload fires somewhere between about :54 of this minute and :05 of
+        the next minute — looks far more human than always hitting :00.
+        (lead_seconds is ignored now; kept for call compatibility.)"""
+        import random
         now = datetime.now()
         secs_into_minute = now.second + now.microsecond / 1_000_000.0
-        until_next = 60.0 - secs_into_minute
-        sleep_for = until_next - lead_seconds
+        until_next = 60.0 - secs_into_minute   # seconds to the next :00
+
+        # offset > 0 → fire BEFORE :00 (up to 6s early → :54)
+        # offset < 0 → fire AFTER  :00 (up to 5s late  → :05)
+        offset = random.uniform(-5.0, 6.0)
+        sleep_for = until_next - offset
         if sleep_for < 0:
             sleep_for += 60.0
         return sleep_for
-
+    
     async def _seconds_until_next_scan(self, lead_seconds: float = 3.0) -> float:
         """If specific scan minutes are set (e.g. {10,11,12}), wait until the
         next time the clock's minute is one of them — lead_seconds before its
@@ -267,12 +275,19 @@ class VisaAgent:
                             f"✅ <b>{name}</b> logged in. Watching calendar every minute."
                         )
 
-                # Sleep until ~3s before the next scan time (every minute, OR
-                # only the custom minutes if /setminutes was used)
-                sleep_for = await self._seconds_until_next_scan(lead_seconds=3.0)
+                # Sleep until ~3s before the next minute boundary
+                sleep_for = await self._seconds_until_next_minute(lead_seconds=3.0)
                 await self._abortable_sleep(sleep_for)
                 if self._abort_scan.is_set() or self._stop_event.is_set():
                     break
+
+                # Human-like: ~15% of the time, just skip this round — a real
+                # person doesn't check at every single opportunity. Skipping
+                # makes the access pattern look less mechanical.
+                if random.random() < 0.15:
+                    now_skip = datetime.now().strftime("%H:%M:%S")
+                    log.info(f"[{name}] [{now_skip}] Randomly skipping this round (human-like)")
+                    continue
 
                 # Reload + read calendar (lands ~on :00)
                 try:
@@ -709,16 +724,10 @@ class VisaAgent:
                     pass
                 continue   # re-check paused at top of loop
 
-            # Every 30 minutes, wipe saved sessions so stale cookies don't
-            # cause Cloudflare/login problems.
-            now_ts = asyncio.get_event_loop().time()
-            if now_ts - self._last_session_clear >= 1800:   # 1800s = 30 min
-                clear_all_sessions()
-                self._last_session_clear = now_ts
-
             # REAL-TIME MODE: this runs its own internal every-minute loop and
             # only returns when a slot is booked, /stop is pressed, or it's
-            # paused. So we don't need the old interval-based wait here.
+            # paused. Session is kept alive — it only re-logs in when the session
+            # actually dies (login form seen). No forced 30-min session wipe.
             await self.run_realtime_loop()
 
             # If the realtime loop returned (booked/stopped/paused), wait for a
