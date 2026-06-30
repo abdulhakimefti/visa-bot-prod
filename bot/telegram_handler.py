@@ -69,7 +69,7 @@ from core.logger import log
 
 DEFAULT_PORTAL = "https://www.usvisascheduling.com/"
 # Only this Telegram group can use the bot (your team's private group)
-ALLOWED_CHAT_ID = -5547708084
+ALLOWED_CHAT_ID = -5524485391
 
 booking_decisions: dict[int, asyncio.Future] = {}
 agent_ref = None
