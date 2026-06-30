@@ -69,7 +69,7 @@ from core.logger import log
 
 DEFAULT_PORTAL = "https://www.usvisascheduling.com/"
 # Only this Telegram group can use the bot (your team's private group)
-ALLOWED_CHAT_ID = -5524485391
+ALLOWED_CHAT_ID = -5547708084
 
 booking_decisions: dict[int, asyncio.Future] = {}
 agent_ref = None
@@ -338,7 +338,47 @@ class TelegramBot:
             "Send /stop then /resume to apply.",
             parse_mode=ParseMode.HTML,
         )
+    async def cmd_setrepeat(self, update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+        """Set how many times to check the calendar within each scheduled scan
+        minute (1 to 4).
+          /setrepeat 2  → check twice each scan minute
+          /setrepeat 1  → check once (default)
+        Takes effect after /stop then /resume."""
+        text = (update.message.text or "").strip()
+        parts = text.split()[1:]
 
+        if not parts:
+            current = await get_config("scan_repeat")
+            n = current if current else "1"
+            await update.message.reply_text(
+                "🔁 <b>Scans per scheduled minute</b>\n\n"
+                f"Current: <b>{n}</b> time(s)\n\n"
+                "Set how many times to check in each scan minute (1-4):\n"
+                "<code>/setrepeat 2</code>\n\n"
+                "More repeats = catches a slot faster, but more portal hits\n"
+                "(higher flag risk). After changing, send /stop then /resume.",
+                parse_mode=ParseMode.HTML,
+            )
+            return
+
+        if not parts[0].isdigit():
+            await update.message.reply_text(
+                "⚠️ Give a number 1-4, e.g. <code>/setrepeat 2</code>",
+                parse_mode=ParseMode.HTML,
+            )
+            return
+
+        n = int(parts[0])
+        if n < 1 or n > 4:
+            await update.message.reply_text("⚠️ Must be between 1 and 4.")
+            return
+
+        await set_config("scan_repeat", str(n))
+        await update.message.reply_text(
+            f"✅ Will check <b>{n}</b> time(s) each scheduled minute.\n\n"
+            "Send /stop then /resume to apply.",
+            parse_mode=ParseMode.HTML,
+        )    
     # ── /cancel ─────────────────────────────────────────────────────────── #
 
     async def cmd_cancel(self, update: Update, ctx: ContextTypes.DEFAULT_TYPE):
@@ -908,6 +948,7 @@ class TelegramBot:
         self.app.add_handler(CommandHandler("accounts",      self.cmd_accounts))
         self.app.add_handler(CommandHandler("removeaccount", self.cmd_removeaccount))
         self.app.add_handler(CommandHandler("setminutes",    self.cmd_setminutes))
+        self.app.add_handler(CommandHandler("setrepeat",     self.cmd_setrepeat))
         self.app.add_handler(setup_conv)
         self.app.add_handler(addaccount_conv)
         # Button handlers (outside conversations)
@@ -926,6 +967,7 @@ class TelegramBot:
             BotCommand("addaccount",    "Add a new account"),
             BotCommand("setup",         "Full setup wizard"),
             BotCommand("setminutes",    "Set scan minutes (e.g. 10 11 12)"),
+            BotCommand("setrepeat",     "Scans per minute (1-4)"),
             BotCommand("start",         "Welcome & menu"),
             BotCommand("cancel",        "Cancel current wizard"),
         ])

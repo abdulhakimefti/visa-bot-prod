@@ -50,6 +50,7 @@ class VisaAgent:
         self._current_scraper: VisaScraper | None = None
         self._scrapers: list = []   # all scrapers running in parallel (realtime)
         self._scan_minutes    = None   # None = every minute; set = only these minutes each hour
+        self._scan_repeat     = 1      # how many times to check within each scan minute (1-4)
         self.scan_count       = 0
         self._last_session_clear = 0.0   # timestamp of last 30-min session wipe
 
@@ -275,38 +276,99 @@ class VisaAgent:
                             f"✅ <b>{name}</b> logged in. Watching calendar every minute."
                         )
 
-                # Sleep until ~3s before the next minute boundary
-                sleep_for = await self._seconds_until_next_minute(lead_seconds=3.0)
+                # Sleep until the next scan time (every minute, OR only the
+                # custom minutes if /setminutes was used). This respects setminutes.
+                sleep_for = await self._seconds_until_next_scan(lead_seconds=3.0)
                 await self._abortable_sleep(sleep_for)
                 if self._abort_scan.is_set() or self._stop_event.is_set():
                     break
 
-                # Human-like: ~15% of the time, just skip this round — a real
-                # person doesn't check at every single opportunity. Skipping
-                # makes the access pattern look less mechanical.
-                if random.random() < 0.15:
-                    now_skip = datetime.now().strftime("%H:%M:%S")
-                    log.info(f"[{name}] [{now_skip}] Randomly skipping this round (human-like)")
-                    continue
+                
 
-                # Reload + read calendar (lands ~on :00)
-                try:
-                    status, slots = await scraper.reload_and_read_calendar()
-                except Exception as e:
-                    from core.scraper import ScanAborted
-                    if isinstance(e, ScanAborted):
+                # Reload + read the calendar `_scan_repeat` times within this
+                # scan minute (set via /setrepeat, 1-4). The passes are spread
+                # evenly across the minute: 2→every 30s, 3→every 20s, 4→every
+                # 15s. EVERY pass sends its own Telegram result. Stops early on
+                # a re-login or a found slot.
+                # Run `repeat` passes spread across the scan minute by WALL CLOCK,
+                # not by fixed gaps. Targets: 2→:00,:30  3→:00,:20,:40
+                # 4→:00,:15,:30,:45. Each pass waits until its target second of
+                # the current minute, so the passes never spill past 60s no
+                # matter how long a reload takes. EVERY pass sends its own
+                # Telegram result. Stops early on re-login or a found slot.
+                repeat = max(1, self._scan_repeat)
+                step = 60.0 / repeat
+                target_secs = [int(round(i * step)) for i in range(repeat)]
+                need_relogin = False
+                broke_for_book = False
+
+                for _pass, tsec in enumerate(target_secs):
+                    # Wait until this pass's target second of the current minute.
+                    # (First pass is usually already at/after :00, so no wait.)
+                    now = datetime.now()
+                    cur = now.second + now.microsecond / 1_000_000.0
+                    wait = tsec - cur
+                    if wait > 0.5:
+                        await self._abortable_sleep(wait)
+                        if self._abort_scan.is_set() or self._stop_event.is_set():
+                            break
+
+                    try:
+                        status, slots = await scraper.reload_and_read_calendar()
+                    except Exception as e:
+                        from core.scraper import ScanAborted
+                        if isinstance(e, ScanAborted):
+                            raise
+                        log.error(f"[{name}] reload_and_read_calendar raised: {e}")
+                        status, slots = "need_relogin", []
+
+                    now_str = datetime.now().strftime("%H:%M:%S")
+
+                    # ── Handle + message THIS pass ──
+                    if status == "need_relogin":
+                        log.info(f"[{name}] Session died — closing browser, re-login")
+                        await notifier.send_telegram(
+                            f"♻️ Session ended for <b>{name}</b> — logging in again."
+                        )
+                        need_relogin = True
                         break
-                    log.error(f"[{name}] reload_and_read_calendar raised: {e}")
-                    status, slots = "need_relogin", []
 
-                now_str = datetime.now().strftime("%H:%M:%S")
+                    if status == "no_calendar":
+                        log.info(f"[{name}] [{now_str}] Calendar not available — browser stays open")
+                        await notifier.send_telegram(
+                            f"📭 [{now_str}] Calendar not available — <b>{name}</b> "
+                            f"(check {_pass+1}/{repeat}, will retry)"
+                        )
+                    elif not slots:
+                        await log_scan("empty", slots_found=0)
+                        log.info(f"[{name}] [{now_str}] No slots (pass {_pass+1}/{repeat})")
+                        await notifier.send_telegram(
+                            f"🔍 [{now_str}] No slots — <b>{name}</b> (check {_pass+1}/{repeat})"
+                        )
+                    else:
+                        # Slot found! — act immediately, stop all passes
+                        await log_scan("found", slots_found=len(slots))
+                        log.info(f"[{name}] [{now_str}] 🎉 {len(slots)} slot(s) found")
+                        await notifier.send_telegram(
+                            f"🎯 [{now_str}] {len(slots)} slot(s) found — <b>{name}</b>!"
+                        )
+                        saved_ids = []
+                        for slot in slots:
+                            sid = await save_slot(slot.slot_date, slot.slot_time,
+                                                  slot.location, slot.slots_available)
+                            saved_ids.append(sid)
+                        if settings.auto_book:
+                            await self._book_slot(scraper, slots[0], account, saved_ids[0])
+                        else:
+                            await self._ask_and_book(scraper, slots, account, saved_ids)
+                        booked = True
+                        broke_for_book = True
+                        break
 
-                if status == "need_relogin":
-                    # ONLY here — session actually died (login form seen).
-                    log.info(f"[{name}] Session died — closing browser, re-login")
-                    await notifier.send_telegram(
-                        f"♻️ Session ended for <b>{name}</b> — logging in again."
-                    )
+                if broke_for_book:
+                    break          # slot handled — stop this account's worker
+
+                if need_relogin:
                     try:
                         await scraper.stop()
                     except Exception:
@@ -318,43 +380,8 @@ class VisaAgent:
                     scraper = None
                     continue
 
-                if status == "no_calendar":
-                    # Calendar/schedule didn't load this minute, but session is
-                    # alive. Browser STAYS OPEN — report and retry next minute.
-                    log.info(f"[{name}] [{now_str}] Calendar not available — browser stays open, retrying")
-                    await notifier.send_telegram(
-                        f"📭 [{now_str}] Calendar not available — <b>{name}</b> (browser open, will retry)"
-                    )
-                    continue
-
-                await log_scan("found" if slots else "empty", slots_found=len(slots))
-
-                if not slots:
-                    log.info(f"[{name}] [{now_str}] No slots this minute")
-                    await notifier.send_telegram(
-                        f"🔍 [{now_str}] No slots — <b>{name}</b>"
-                    )
-                    continue
-
-                # Slot found!
-                log.info(f"[{name}] [{now_str}] 🎉 {len(slots)} slot(s) found")
-                await notifier.send_telegram(
-                    f"🎯 [{now_str}] {len(slots)} slot(s) found — <b>{name}</b>!"
-                )
-                saved_ids = []
-                for slot in slots:
-                    sid = await save_slot(slot.slot_date, slot.slot_time,
-                                          slot.location, slot.slots_available)
-                    saved_ids.append(sid)
-
-                if settings.auto_book:
-                    await self._book_slot(scraper, slots[0], account, saved_ids[0])
-                    booked = True
-                    break
-                else:
-                    await self._ask_and_book(scraper, slots, account, saved_ids)
-                    booked = True
-                    break
+                # all passes done, no slot, no relogin → loop back to next minute
+                continue
 
         except Exception as e:
             from core.scraper import ScanAborted
@@ -417,6 +444,18 @@ class VisaAgent:
             log.info(f"Scan minutes: {sorted(self._scan_minutes)} (each hour)")
         else:
             log.info("Scan mode: every minute")
+
+        # Load how many times to check within each scan minute (1-4)
+        raw_repeat = await get_config("scan_repeat")
+        try:
+            self._scan_repeat = int(raw_repeat) if raw_repeat else 1
+        except Exception:
+            self._scan_repeat = 1
+        if self._scan_repeat < 1:
+            self._scan_repeat = 1
+        if self._scan_repeat > 4:
+            self._scan_repeat = 4
+        log.info(f"Scan repeat: {self._scan_repeat}x per scan minute")
 
         await notifier.send_telegram(
             f"⏱ <b>Real-time mode started</b>\n"
