@@ -1624,7 +1624,7 @@ class VisaScraper:
         slots: List[AppointmentSlot] = []
         try:
             try:
-                await self._page.reload(wait_until="domcontentloaded", timeout=45000)
+                await self._page.reload(wait_until="domcontentloaded", timeout=75000)
             except ScanAborted:
                 raise
             except Exception as e:
@@ -1637,6 +1637,7 @@ class VisaScraper:
 
             # A few small mouse moves + a scroll, like glancing over the page
             await self._human_glance()
+
 
             try:
                 body_peek = (await self._page.inner_text("body")).lower()

@@ -1810,3 +1810,676 @@ Call log:
 2026-06-28 13:47:46,219 [INFO] visa_bot: ✅ Telegram message sent
 2026-06-28 13:47:48,675 [INFO] visa_bot: ✅ Telegram message sent
 2026-06-28 13:47:48,677 [INFO] visa_bot: Done.
+2026-06-30 14:18:33,404 [INFO] visa_bot: =======================================================
+2026-06-30 14:18:33,404 [INFO] visa_bot:    VISA APPOINTMENT BOT — Starting
+2026-06-30 14:18:33,405 [INFO] visa_bot: =======================================================
+2026-06-30 14:18:33,435 [INFO] visa_bot: Database ready ✓
+2026-06-30 14:18:40,026 [INFO] visa_bot: Telegram bot started ✓
+2026-06-30 14:18:40,027 [INFO] visa_bot: Testing Telegram connection...
+2026-06-30 14:18:40,028 [INFO] visa_bot: Testing Telegram connection...
+2026-06-30 14:18:41,519 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:18:41,523 [INFO] visa_bot: ✅ Telegram connection test passed!
+2026-06-30 14:18:41,535 [INFO] visa_bot: No config — waiting for /setup on Telegram
+2026-06-30 14:18:42,455 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:18:42,459 [INFO] visa_bot: Bot running. Press Ctrl+C to stop.
+2026-06-30 14:18:42,483 [WARNING] visa_bot: No config in DB — waiting for /setup
+2026-06-30 14:18:43,435 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:18:43,438 [INFO] visa_bot: Realtime loop ended — waiting for /resume or /scan.
+2026-06-30 14:20:49,312 [INFO] visa_bot: Stopping...
+2026-06-30 14:20:49,314 [INFO] visa_bot: Scan aborted by command
+2026-06-30 14:20:52,191 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:20:52,194 [INFO] visa_bot: Done.
+2026-06-30 14:20:57,561 [INFO] visa_bot: =======================================================
+2026-06-30 14:20:57,562 [INFO] visa_bot:    VISA APPOINTMENT BOT — Starting
+2026-06-30 14:20:57,562 [INFO] visa_bot: =======================================================
+2026-06-30 14:20:57,565 [INFO] visa_bot: Database ready ✓
+2026-06-30 14:21:00,002 [INFO] visa_bot: Telegram bot started ✓
+2026-06-30 14:21:00,002 [INFO] visa_bot: Testing Telegram connection...
+2026-06-30 14:21:00,003 [INFO] visa_bot: Testing Telegram connection...
+2026-06-30 14:21:00,921 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:21:00,922 [INFO] visa_bot: ✅ Telegram connection test passed!
+2026-06-30 14:21:00,925 [INFO] visa_bot: No config — waiting for /setup on Telegram
+2026-06-30 14:21:01,851 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:21:01,854 [INFO] visa_bot: Bot running. Press Ctrl+C to stop.
+2026-06-30 14:21:01,879 [WARNING] visa_bot: No config in DB — waiting for /setup
+2026-06-30 14:21:02,886 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:21:02,889 [INFO] visa_bot: Realtime loop ended — waiting for /resume or /scan.
+2026-06-30 14:25:10,527 [INFO] visa_bot: Account #1 saved: ashfaqmahir23
+2026-06-30 14:25:11,016 [INFO] visa_bot: 🗑️ Cleared 0 saved session(s)
+2026-06-30 14:25:11,063 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-30 → 2026-08-07
+2026-06-30 14:25:11,085 [INFO] visa_bot: Scan mode: every minute
+2026-06-30 14:25:12,112 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:25:21,798 [INFO] visa_bot: Browser started
+2026-06-30 14:25:21,798 [INFO] visa_bot: Logging in as: ashfaqmahir23
+2026-06-30 14:25:23,326 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-30 14:25:23,330 [INFO] visa_bot: ✅ Past waiting room
+2026-06-30 14:25:23,331 [INFO] visa_bot: Waiting for login page... 0s elapsed
+2026-06-30 14:25:26,391 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-30 14:25:26,391 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-30 14:25:26,433 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-30 14:25:27,361 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-30 14:25:28,303 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:25:32,349 [INFO] visa_bot: Retrying in 2s...
+2026-06-30 14:25:34,397 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-30 14:25:34,398 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-30 14:25:34,412 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-30 14:25:34,967 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-30 14:25:35,918 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:25:40,044 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-30 14:25:40,049 [INFO] visa_bot: ✅ Past waiting room
+2026-06-30 14:25:43,055 [INFO] visa_bot: Login form detected
+2026-06-30 14:25:43,766 [INFO] visa_bot: Username filled
+2026-06-30 14:25:44,138 [INFO] visa_bot: Password filled
+2026-06-30 14:25:44,653 [INFO] visa_bot: Login submitted
+2026-06-30 14:25:44,716 [INFO] visa_bot: ✅ Past waiting room
+2026-06-30 14:25:44,721 [INFO] visa_bot: ✅ Past waiting room
+2026-06-30 14:25:46,859 [WARNING] visa_bot: Could not read security question fields: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-06-30 14:25:47,875 [INFO] visa_bot: Security questions page detected with 2 question(s)
+2026-06-30 14:25:47,876 [INFO] visa_bot: Security question: What was the name of your first/current/favorite pet? | matched keyword: pet
+2026-06-30 14:25:47,908 [INFO] visa_bot: Filled #kba1_response
+2026-06-30 14:25:47,909 [INFO] visa_bot: Security question: Who was your childhood hero? | matched keyword: hero
+2026-06-30 14:25:47,929 [INFO] visa_bot: Filled #kba3_response
+2026-06-30 14:25:48,524 [INFO] visa_bot: Security questions submitted
+2026-06-30 14:25:55,993 [INFO] visa_bot: Login successful — portal content detected
+2026-06-30 14:25:57,052 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:25:57,721 [INFO] visa_bot: After login URL: https://www.usvisascheduling.com/en-US/
+2026-06-30 14:25:57,758 [INFO] visa_bot: ✅ Login successful (portal content detected)
+2026-06-30 14:25:57,772 [INFO] visa_bot: 💾 Session saved for ashfaqmahir23
+2026-06-30 14:25:58,734 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:25:59,912 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:25:59,915 [INFO] visa_bot: Navigating to homepage...
+2026-06-30 14:26:01,008 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-30 14:26:01,023 [INFO] visa_bot: ✅ Past waiting room
+2026-06-30 14:26:02,509 [INFO] visa_bot: Detecting schedule type...
+2026-06-30 14:26:03,557 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-30 14:26:04,497 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:26:04,520 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-30 14:26:04,525 [INFO] visa_bot: ✅ Past waiting room
+2026-06-30 14:26:07,074 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-30 14:26:08,091 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:26:08,790 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:26:08,791 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:26:09,810 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:26:09,810 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-30 14:26:10,915 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:27:01,495 [INFO] visa_bot: [ashfaqmahir23] [14:27:01] Randomly skipping this round (human-like)
+2026-06-30 14:28:05,673 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:28:06,623 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:28:06,626 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:28:07,654 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:28:07,655 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:28:07,665 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:28:10,560 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:28:10,606 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:28:10,627 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:28:10,643 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:28:10,660 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:28:10,660 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:28:10,660 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:28:10,666 [INFO] visa_bot: [ashfaqmahir23] [14:28:10] No slots this minute
+2026-06-30 14:28:11,812 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:29:09,998 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:29:10,768 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:29:10,769 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:29:11,797 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:29:11,798 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:29:11,806 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:29:14,813 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:29:14,836 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:29:14,855 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:29:14,876 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:29:14,895 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:29:14,896 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:29:14,896 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:29:14,903 [INFO] visa_bot: [ashfaqmahir23] [14:29:14] No slots this minute
+2026-06-30 14:29:15,905 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:30:18,076 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:30:28,254 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:30:28,255 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:30:31,426 [INFO] visa_bot: Calendar loading... (2s)
+2026-06-30 14:30:32,472 [INFO] visa_bot: Calendar loading... (3s)
+2026-06-30 14:30:33,525 [INFO] visa_bot: Calendar loading... (4s)
+2026-06-30 14:30:34,580 [INFO] visa_bot: Calendar loading... (5s)
+2026-06-30 14:30:35,609 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:30:35,610 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:30:35,617 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:30:38,237 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:30:38,261 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:30:38,283 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:30:38,300 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:30:38,318 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:30:38,318 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:30:38,319 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:30:38,328 [INFO] visa_bot: [ashfaqmahir23] [14:30:38] No slots this minute
+2026-06-30 14:30:39,294 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:31:09,672 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:31:10,275 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:31:10,276 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:31:11,318 [INFO] visa_bot: Calendar loading... (0s)
+2026-06-30 14:31:12,333 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:31:12,334 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:31:12,339 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:31:15,005 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:31:15,031 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:31:15,055 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:31:15,083 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:31:15,110 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:31:15,110 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:31:15,111 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:31:15,139 [INFO] visa_bot: [ashfaqmahir23] [14:31:15] No slots this minute
+2026-06-30 14:31:16,087 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:32:11,767 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:32:12,676 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:32:12,676 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:32:13,698 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:32:13,699 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:32:13,705 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:32:16,233 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:32:16,258 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:32:16,287 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:32:16,310 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:32:16,332 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:32:16,332 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:32:16,333 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:32:16,363 [INFO] visa_bot: [ashfaqmahir23] [14:32:16] No slots this minute
+2026-06-30 14:32:17,419 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:33:02,437 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:33:03,399 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:33:03,399 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:33:04,415 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:33:04,415 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:33:04,421 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:33:07,556 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:33:07,580 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:33:07,608 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:33:07,631 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:33:07,653 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:33:07,654 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:33:07,654 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:33:07,664 [INFO] visa_bot: [ashfaqmahir23] [14:33:07] No slots this minute
+2026-06-30 14:33:08,673 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:34:02,179 [INFO] visa_bot: [ashfaqmahir23] [14:34:02] Randomly skipping this round (human-like)
+2026-06-30 14:35:03,673 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:35:04,383 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:35:04,383 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:35:05,404 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:35:05,405 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:35:05,412 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:35:08,229 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:35:08,265 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:35:08,289 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:35:08,310 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:35:08,334 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:35:08,334 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:35:08,334 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:35:08,344 [INFO] visa_bot: [ashfaqmahir23] [14:35:08] No slots this minute
+2026-06-30 14:35:09,225 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:36:09,108 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:36:10,003 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:36:10,004 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:36:11,037 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:36:11,039 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:36:11,053 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:36:13,860 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:36:13,900 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:36:13,921 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:36:13,947 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:36:13,967 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:36:13,968 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:36:13,968 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:36:13,996 [INFO] visa_bot: [ashfaqmahir23] [14:36:13] No slots this minute
+2026-06-30 14:36:14,983 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:37:12,639 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:37:13,619 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:37:13,620 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:37:14,641 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:37:14,643 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:37:14,654 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:37:17,652 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:37:17,681 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:37:17,718 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:37:17,749 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:37:17,787 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:37:17,788 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:37:17,788 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:37:17,800 [INFO] visa_bot: [ashfaqmahir23] [14:37:17] No slots this minute
+2026-06-30 14:37:18,824 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:38:06,285 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:38:07,216 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:38:07,216 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:38:08,236 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:38:08,236 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:38:08,241 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:38:10,974 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:38:10,993 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:38:11,015 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:38:11,035 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:38:11,054 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:38:11,054 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:38:11,056 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:38:11,080 [INFO] visa_bot: [ashfaqmahir23] [14:38:11] No slots this minute
+2026-06-30 14:38:11,987 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:39:13,140 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:39:13,716 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:39:13,717 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:39:14,755 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:39:14,757 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:39:14,774 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:39:17,731 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:39:17,765 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:39:17,786 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:39:17,809 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:39:17,832 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:39:17,832 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:39:17,833 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:39:17,861 [INFO] visa_bot: [ashfaqmahir23] [14:39:17] No slots this minute
+2026-06-30 14:39:18,871 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:40:06,320 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:40:07,286 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:40:07,287 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:40:08,316 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:40:08,317 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:40:08,323 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:40:10,984 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:40:11,012 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:40:11,037 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:40:11,059 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:40:11,085 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:40:11,085 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:40:11,086 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:40:11,099 [INFO] visa_bot: [ashfaqmahir23] [14:40:11] No slots this minute
+2026-06-30 14:40:12,151 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:41:01,572 [INFO] visa_bot: Cloudflare appeared after reload — handling
+2026-06-30 14:41:01,584 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-30 14:41:01,585 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-30 14:41:01,612 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-30 14:41:02,195 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-30 14:41:03,196 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:41:07,289 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-30 14:41:08,300 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:41:09,227 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:41:09,228 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:41:10,263 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:41:10,265 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:41:10,283 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:41:12,850 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:41:12,882 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:41:12,922 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:41:12,943 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:41:12,969 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:41:12,969 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:41:12,970 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:41:12,995 [INFO] visa_bot: [ashfaqmahir23] [14:41:12] No slots this minute
+2026-06-30 14:41:13,907 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:42:14,376 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:42:15,179 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:42:15,181 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:42:16,226 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:42:16,228 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:42:16,245 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:42:19,195 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:42:19,250 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:42:19,306 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:42:19,344 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:42:19,385 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:42:19,386 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:42:19,387 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:42:19,420 [INFO] visa_bot: [ashfaqmahir23] [14:42:19] No slots this minute
+2026-06-30 14:42:20,415 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:43:07,120 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:43:07,968 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:43:07,969 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:43:08,997 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:43:08,998 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:43:09,017 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:43:12,169 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:43:12,226 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:43:12,254 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:43:12,276 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:43:12,297 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:43:12,297 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:43:12,298 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:43:12,324 [INFO] visa_bot: [ashfaqmahir23] [14:43:12] No slots this minute
+2026-06-30 14:43:13,355 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:44:08,854 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:44:09,772 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:44:09,773 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:44:10,811 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:44:10,812 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:44:10,821 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:44:14,036 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:44:14,054 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:44:14,075 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:44:14,092 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:44:14,109 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:44:14,109 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:44:14,110 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:44:14,136 [INFO] visa_bot: [ashfaqmahir23] [14:44:14] No slots this minute
+2026-06-30 14:44:15,317 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:45:11,326 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:45:12,197 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:45:12,197 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:45:13,229 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:45:13,230 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:45:13,239 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:45:16,183 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:45:16,199 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:45:16,215 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:45:16,233 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:45:16,248 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:45:16,248 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:45:16,249 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:45:16,274 [INFO] visa_bot: [ashfaqmahir23] [14:45:16] No slots this minute
+2026-06-30 14:45:17,298 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:46:10,946 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:46:11,771 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:46:11,772 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:46:12,810 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:46:12,811 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:46:12,821 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:46:15,575 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:46:15,594 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:46:15,613 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:46:15,629 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:46:15,645 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:46:15,645 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:46:15,646 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:46:15,673 [INFO] visa_bot: [ashfaqmahir23] [14:46:15] No slots this minute
+2026-06-30 14:46:16,680 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:47:09,799 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:47:10,727 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:47:10,727 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:47:11,754 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:47:11,755 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:47:11,762 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:47:14,587 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:47:14,606 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:47:14,625 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:47:14,640 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:47:14,653 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:47:14,654 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:47:14,654 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:47:14,678 [INFO] visa_bot: [ashfaqmahir23] [14:47:14] No slots this minute
+2026-06-30 14:47:15,659 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:48:01,699 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:48:02,489 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:48:02,490 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:48:03,512 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:48:03,513 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:48:03,519 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:48:06,392 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:48:06,413 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:48:06,431 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:48:06,448 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:48:06,465 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:48:06,466 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:48:06,466 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:48:06,493 [INFO] visa_bot: [ashfaqmahir23] [14:48:06] No slots this minute
+2026-06-30 14:48:07,541 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:49:10,137 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:49:11,119 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:49:11,120 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:49:12,150 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:49:12,151 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:49:12,163 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:49:15,114 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:49:15,129 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:49:15,145 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:49:15,164 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:49:15,181 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:49:15,181 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:49:15,181 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:49:15,207 [INFO] visa_bot: [ashfaqmahir23] [14:49:15] No slots this minute
+2026-06-30 14:49:16,240 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:50:08,503 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:50:09,194 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:50:09,211 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:50:10,244 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:50:10,245 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:50:10,254 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:50:13,001 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:50:13,019 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:50:13,035 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:50:13,050 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:50:13,065 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:50:13,065 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:50:13,065 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:50:13,090 [INFO] visa_bot: [ashfaqmahir23] [14:50:13] No slots this minute
+2026-06-30 14:50:14,709 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:51:15,651 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:51:16,286 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:51:16,288 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:51:17,321 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:51:17,323 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:51:17,333 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:51:20,273 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:51:20,302 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:51:20,322 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:51:20,344 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:51:20,363 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:51:20,363 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:51:20,364 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:51:20,373 [INFO] visa_bot: [ashfaqmahir23] [14:51:20] No slots this minute
+2026-06-30 14:51:21,470 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:52:11,850 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:52:12,452 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:52:12,453 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:52:13,486 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:52:13,487 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:52:13,498 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:52:16,592 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:52:16,626 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:52:16,648 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:52:16,665 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:52:16,681 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:52:16,681 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:52:16,681 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:52:16,706 [INFO] visa_bot: [ashfaqmahir23] [14:52:16] No slots this minute
+2026-06-30 14:52:17,786 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:53:05,178 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:53:06,078 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:53:06,079 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:53:07,108 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:53:07,110 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:53:07,126 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:53:09,995 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:53:10,019 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:53:10,037 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:53:10,055 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:53:10,070 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:53:10,071 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:53:10,071 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:53:10,113 [INFO] visa_bot: [ashfaqmahir23] [14:53:10] No slots this minute
+2026-06-30 14:53:11,236 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:54:07,024 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:54:07,993 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:54:07,994 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:54:09,026 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:54:09,027 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:54:09,037 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:54:11,903 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:54:11,922 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:54:11,940 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:54:11,957 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:54:11,976 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:54:11,976 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:54:11,977 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:54:11,984 [INFO] visa_bot: [ashfaqmahir23] [14:54:11] No slots this minute
+2026-06-30 14:54:13,854 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:55:18,501 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:55:19,258 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:55:19,259 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:55:20,290 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:55:20,291 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:55:20,301 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:55:22,877 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:55:22,901 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:55:22,923 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:55:22,940 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:55:22,957 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:55:22,957 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:55:22,957 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:55:22,982 [INFO] visa_bot: [ashfaqmahir23] [14:55:22] No slots this minute
+2026-06-30 14:55:25,187 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:56:09,807 [INFO] visa_bot: Cloudflare appeared after reload — handling
+2026-06-30 14:56:09,818 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-30 14:56:09,818 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-30 14:56:09,839 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-30 14:56:10,393 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-30 14:56:11,339 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:56:15,388 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-30 14:56:16,477 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:56:17,283 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:56:17,285 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:56:18,318 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:56:18,320 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:56:18,333 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:56:21,001 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:56:21,017 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:56:21,035 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:56:21,051 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:56:21,066 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:56:21,067 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:56:21,067 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:56:21,074 [INFO] visa_bot: [ashfaqmahir23] [14:56:21] No slots this minute
+2026-06-30 14:56:22,205 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:57:11,792 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:57:12,374 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:57:12,375 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:57:13,415 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:57:13,416 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:57:13,428 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:57:16,057 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:57:16,078 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:57:16,096 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:57:16,114 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:57:16,131 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:57:16,131 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:57:16,132 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:57:16,139 [INFO] visa_bot: [ashfaqmahir23] [14:57:16] No slots this minute
+2026-06-30 14:57:17,193 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:58:06,323 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:58:07,054 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:58:07,055 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:58:08,085 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:58:08,086 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:58:08,095 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:58:11,050 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:58:11,067 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:58:11,086 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:58:11,103 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:58:11,120 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:58:11,121 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:58:11,121 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:58:11,146 [INFO] visa_bot: [ashfaqmahir23] [14:58:11] No slots this minute
+2026-06-30 14:58:12,177 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:59:03,377 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 14:59:04,416 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 14:59:04,416 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 14:59:05,450 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 14:59:05,450 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 14:59:05,457 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 14:59:08,564 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 14:59:08,604 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 14:59:08,623 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 14:59:08,641 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 14:59:08,657 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 14:59:08,658 [INFO] visa_bot: Total available dates: 0
+2026-06-30 14:59:08,659 [INFO] visa_bot: No available dates this minute
+2026-06-30 14:59:08,669 [INFO] visa_bot: [ashfaqmahir23] [14:59:08] No slots this minute
+2026-06-30 14:59:09,830 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:00:51,777 [WARNING] visa_bot: Reload failed: Page.reload: Timeout 45000ms exceeded.
+Call log:
+  - waiting for navigation until "domcontentloaded"
+ — will re-login
+2026-06-30 15:00:51,778 [INFO] visa_bot: [ashfaqmahir23] Session died — closing browser, re-login
+2026-06-30 15:00:52,773 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:00:53,235 [INFO] visa_bot: Browser stopped
+2026-06-30 15:00:58,603 [INFO] visa_bot: Browser started
+2026-06-30 15:00:58,615 [INFO] visa_bot: Logging in as: ashfaqmahir23
+2026-06-30 15:00:58,662 [INFO] visa_bot: ♻️ Session loaded for ashfaqmahir23
+2026-06-30 15:00:58,663 [INFO] visa_bot: Trying saved session — checking if still valid...
+2026-06-30 15:00:59,865 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-30 15:00:59,872 [INFO] visa_bot: ✅ Past waiting room
+2026-06-30 15:01:02,411 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-30 15:01:02,411 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-30 15:01:02,430 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-30 15:01:02,998 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-30 15:01:03,924 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:01:07,989 [INFO] visa_bot: Retrying in 2s...
+2026-06-30 15:01:10,015 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-06-30 15:01:10,016 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-06-30 15:01:10,024 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-06-30 15:01:10,574 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-06-30 15:01:11,523 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:01:15,758 [INFO] visa_bot: ✅ CF cleared after click!
+2026-06-30 15:01:15,832 [INFO] visa_bot: ✅ Session still valid — login skipped!
+2026-06-30 15:01:16,851 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:01:17,709 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:01:17,710 [INFO] visa_bot: Navigating to homepage...
+2026-06-30 15:01:19,034 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-30 15:01:19,057 [INFO] visa_bot: ✅ Past waiting room
+2026-06-30 15:01:20,172 [INFO] visa_bot: Detecting schedule type...
+2026-06-30 15:01:21,284 [INFO] visa_bot: ✅ RESCHEDULE mode — clicked Reschedule Appointment
+2026-06-30 15:01:22,225 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:01:22,292 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-06-30 15:01:22,309 [INFO] visa_bot: ✅ Past waiting room
+2026-06-30 15:01:24,261 [INFO] visa_bot: ✅ On schedule page — post dropdown visible!
+2026-06-30 15:01:25,219 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:01:25,805 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 15:01:25,805 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 15:01:26,817 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 15:01:26,818 [INFO] visa_bot: ✅ Calendar page ready — browser will stay open for reloads
+2026-06-30 15:01:27,856 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:02:04,746 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:02:05,785 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 15:02:05,785 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 15:02:06,851 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 15:02:06,855 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 15:02:06,861 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 15:02:09,522 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 15:02:09,549 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 15:02:09,574 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 15:02:09,596 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 15:02:09,618 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 15:02:09,618 [INFO] visa_bot: Total available dates: 0
+2026-06-30 15:02:09,618 [INFO] visa_bot: No available dates this minute
+2026-06-30 15:02:09,644 [INFO] visa_bot: [ashfaqmahir23] [15:02:09] No slots this minute
+2026-06-30 15:02:10,550 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:03:02,676 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:03:03,542 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 15:03:03,543 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 15:03:04,583 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 15:03:04,585 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 15:03:04,601 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 15:03:07,557 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 15:03:07,584 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 15:03:07,607 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 15:03:07,629 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 15:03:07,654 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 15:03:07,655 [INFO] visa_bot: Total available dates: 0
+2026-06-30 15:03:07,655 [INFO] visa_bot: No available dates this minute
+2026-06-30 15:03:07,680 [INFO] visa_bot: [ashfaqmahir23] [15:03:07] No slots this minute
+2026-06-30 15:03:08,717 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:04:10,806 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:04:11,493 [INFO] visa_bot: ✅ Selected DHAKA from dropdown
+2026-06-30 15:04:11,494 [INFO] visa_bot: Waiting for calendar to load...
+2026-06-30 15:04:12,527 [INFO] visa_bot: ✅ Calendar loaded!
+2026-06-30 15:04:12,528 [INFO] visa_bot: Filtering dates to range: 2026-06-30 → 2026-08-07
+2026-06-30 15:04:12,536 [INFO] visa_bot: No available dates in current view — scrolling months...
+2026-06-30 15:04:15,103 [INFO] visa_bot: Found 4 dates after scrolling 2 months!
+2026-06-30 15:04:15,137 [INFO] visa_bot: ⏭ Skipping 2026-09-20 — outside configured range
+2026-06-30 15:04:15,171 [INFO] visa_bot: ⏭ Skipping 2026-09-23 — outside configured range
+2026-06-30 15:04:15,207 [INFO] visa_bot: ⏭ Skipping 2026-09-27 — outside configured range
+2026-06-30 15:04:15,242 [INFO] visa_bot: ⏭ Skipping 2026-09-30 — outside configured range
+2026-06-30 15:04:15,243 [INFO] visa_bot: Total available dates: 0
+2026-06-30 15:04:15,244 [INFO] visa_bot: No available dates this minute
+2026-06-30 15:04:15,280 [INFO] visa_bot: [ashfaqmahir23] [15:04:15] No slots this minute
+2026-06-30 15:04:16,189 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:04:41,200 [INFO] visa_bot: Stopping...
+2026-06-30 15:04:41,482 [INFO] visa_bot: Browser stopped
+2026-06-30 15:04:41,482 [INFO] visa_bot: Browser stopped
+2026-06-30 15:04:41,483 [INFO] visa_bot: Scan aborted by command
+2026-06-30 15:04:42,560 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:04:44,741 [INFO] visa_bot: ✅ Telegram message sent
+2026-06-30 15:04:44,743 [INFO] visa_bot: Done.
