@@ -2912,3 +2912,47 @@ Call log:
 2026-07-01 00:43:36,649 [INFO] visa_bot: ✅ Telegram message sent
 2026-07-01 00:43:39,329 [INFO] visa_bot: ✅ Telegram message sent
 2026-07-01 00:43:39,332 [INFO] visa_bot: Done.
+2026-07-02 22:28:38,760 [INFO] visa_bot: =======================================================
+2026-07-02 22:28:38,761 [INFO] visa_bot:    VISA APPOINTMENT BOT — Starting
+2026-07-02 22:28:38,762 [INFO] visa_bot: =======================================================
+2026-07-02 22:28:38,775 [INFO] visa_bot: Database ready ✓
+2026-07-02 22:28:42,467 [INFO] visa_bot: Telegram bot started ✓
+2026-07-02 22:28:42,467 [INFO] visa_bot: Testing Telegram connection...
+2026-07-02 22:28:42,468 [INFO] visa_bot: Testing Telegram connection...
+2026-07-02 22:28:43,429 [INFO] visa_bot: ✅ Telegram message sent
+2026-07-02 22:28:43,431 [INFO] visa_bot: ✅ Telegram connection test passed!
+2026-07-02 22:28:43,437 [INFO] visa_bot: Existing config found — resuming
+2026-07-02 22:28:44,426 [INFO] visa_bot: ✅ Telegram message sent
+2026-07-02 22:28:44,477 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-30 → 2026-08-07
+2026-07-02 22:28:44,477 [INFO] visa_bot: Bot running. Press Ctrl+C to stop.
+2026-07-02 22:28:44,555 [INFO] visa_bot: Config: https://www.usvisascheduling.com/ | B1/B2 | 2026-06-30 → 2026-08-07
+2026-07-02 22:28:44,570 [INFO] visa_bot: Scan minutes: [34, 35, 39] (each hour)
+2026-07-02 22:28:44,575 [INFO] visa_bot: Scan repeat: 2x per scan minute
+2026-07-02 22:28:45,548 [INFO] visa_bot: ✅ Telegram message sent
+2026-07-02 22:28:57,631 [INFO] visa_bot: 🗑️ Cleared 1 saved session(s)
+2026-07-02 22:29:07,050 [INFO] visa_bot: Browser started
+2026-07-02 22:29:07,051 [INFO] visa_bot: Logging in as: halimahossain6666
+2026-07-02 22:29:08,383 [INFO] visa_bot: ✅ Cloudflare cleared
+2026-07-02 22:29:08,391 [INFO] visa_bot: ✅ Past waiting room
+2026-07-02 22:29:08,391 [INFO] visa_bot: Waiting for login page... 0s elapsed
+2026-07-02 22:29:11,506 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-07-02 22:29:11,507 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-07-02 22:29:11,565 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-07-02 22:29:12,274 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-07-02 22:29:13,313 [INFO] visa_bot: ✅ Telegram message sent
+2026-07-02 22:29:17,386 [INFO] visa_bot: Retrying in 2s...
+2026-07-02 22:29:19,421 [INFO] visa_bot: ⏳ Cloudflare detected — clicking checkbox...
+2026-07-02 22:29:19,422 [INFO] visa_bot: Found CF iframe: https://challenges.cloudflare.com/cdn-cgi/challenge-platform
+2026-07-02 22:29:19,442 [INFO] visa_bot: CF iframe at: x=192 y=304 w=300 h=65
+2026-07-02 22:29:19,994 [INFO] visa_bot: ✅ Mouse clicked CF checkbox at (222, 336)
+2026-07-02 22:29:20,953 [INFO] visa_bot: ✅ Telegram message sent
+2026-07-02 22:29:25,067 [INFO] visa_bot: ✅ CF cleared — no challenge signs!
+2026-07-02 22:29:26,119 [INFO] visa_bot: ✅ Telegram message sent
+2026-07-02 22:29:26,139 [INFO] visa_bot: ⏳ Waiting room (~1 minutes) — 1s elapsed
+2026-07-02 22:29:33,033 [INFO] visa_bot: Stopping...
+2026-07-02 22:29:33,162 [INFO] visa_bot: Browser stopped
+2026-07-02 22:29:33,171 [INFO] visa_bot: Scan aborted by command
+2026-07-02 22:29:33,656 [INFO] visa_bot: Browser stopped
+2026-07-02 22:29:34,716 [INFO] visa_bot: ✅ Telegram message sent
+2026-07-02 22:29:36,809 [INFO] visa_bot: ✅ Telegram message sent
+2026-07-02 22:29:36,810 [INFO] visa_bot: Done.
